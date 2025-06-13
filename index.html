@@ -1,33 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hotel el Ensueño Dorado, distinguido por su elegancia y gran alojamiento, reserva y disfruta de una gran experiencia.">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hotel el Ensueño Dorado, distinguido por su elegancia y gran alojamiento, reserva y disfruta de una gran experiencia."
+    />
     <title>Hotel el Ensueño Dorado</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
     <header>
-        <img src="./media/imgs/LOGO_HOTEL 4.png" class="header__logo" alt="Logo del Ensueño Dorado">
-        <nav class="header__nav">
-            <ul class="nav__lista">
-                <li><a href="#" class="nav__link">Inicio</a></li>
-                <li><a href="#" class="nav__link">Historia</a></li>
-                <li><a href="#" class="nav__link">Habitaciones</a></li>
-                <li><a href="#" class="nav__link">Experiencias</a></li>
-                <li><a href="#" class="nav__link">Lugares</a></li>
-            </ul>
+      <img
+        src="./media/imgs/LOGO_HOTEL 4.png"
+        class="header__logo"
+        alt="Logo del Ensueño Dorado"
+      />
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="#" class="nav__link">Inicio</a></li>
+          <li><a href="#" class="nav__link">Historia</a></li>
+          <li><a href="#" class="nav__link">Habitaciones</a></li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
 
-            <!-- Menú que aparece con hover -->
-             <ul class="nav__lista--none">
-                <li><a href="#" class="nav__link">Restaurantes</a></li>
-                <li><a href="#" class="nav__link">Eventos</a></li>
-                <li><a href="#" class="nav__link">Salas</a></li>
-             </ul>
-        </nav>
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="#" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+      </nav>
     </header>
     <main></main>
-    <footer></footer>
-</body>
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="./media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="./media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
 </html>

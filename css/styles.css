@@ -1,58 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Estilos generales */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid white;
 }
 
 :root {
-    --color-principal: #D7C9B1;
-    --color-secundario: #F9F6F1;
-    --color-terciario: #06090E;
-    --color-resaltador: #D4AF37;
+  --color-principal: #d7c9b1;
+  --color-secundario: #f9f6f1;
+  --color-terciario: #06090e;
+  --color-resaltador: #d4af37;
 }
 
 header {
-    font-family: "Nunito", sans-serif;
-    width: 100%;
-    padding: 0 2rem;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-terciario);
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  padding: 0 2rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-terciario);
+}
+
+.display-none {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .header__nav {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .nav__lista {
-    display: flex;
-    width: fit-content;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  align-items: center;
 }
 
 .nav__lista--none {
-    height: fit-content;
-    position: fixed;
-    right: 0;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
-    background-color: var(--color-terciario);
+  height: fit-content;
+  position: fixed;
+  right: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-terciario);
 }
 
 .header__logo {
-    width: 5%;
+  width: 6%;
 }
 
 .nav__link {
-    color: white;
+  color: white;
+  transition: 0.3s ease all;
+}
+
+.nav__link:hover {
+  color: var(--color-resaltador);
+}
+
+/* Eliminar esto  */
+
+main {
+  height: 100vh;
+}
+
+footer {
+  background-color: var(--color-terciario);
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__content {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.footer__subtitle {
+  color: white;
+}
+
+.footer__text {
+  color: gainsboro;
+}
+
+.footer__logo {
+  width: 60%;
+}
+
+.footer__img {
+  width: 100%;
+  transition: 0.3s ease all;
+}
+
+.footer__img:hover {
+  scale: 1.1;
+}
+
+.footer__img--content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
