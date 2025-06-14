@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 
 /* Estilos generales */
 
@@ -23,6 +23,7 @@ hr {
 }
 
 header {
+  z-index: 9999;
   font-family: "Nunito", sans-serif;
   width: 100%;
   padding: 0 2rem;
@@ -51,7 +52,6 @@ header {
 }
 
 .header__nav {
-  border: 1px solid black;
 }
 
 .nav__lista {
@@ -74,7 +74,7 @@ header {
 }
 
 .header__logo {
-  width: 6%;
+  width: 5%;
 }
 
 .nav__link {
@@ -84,12 +84,6 @@ header {
 
 .nav__link:hover {
   color: var(--color-resaltador);
-}
-
-/* Eliminar esto  */
-
-main {
-  height: 100vh;
 }
 
 footer {
@@ -132,4 +126,97 @@ footer {
   width: 40%;
   display: flex;
   justify-content: center;
+}
+
+/* Pagina Principal */
+
+.principal--bg {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../media/backgrounds/bg-principal.webp);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 2rem;
+}
+
+.principal__content {
+}
+
+.principal__title {
+  width: 35%;
+  font-size: 6rem;
+  font-family: "Old Standard TT", serif;
+  font-weight: lighter;
+  color: white;
+}
+
+.principal__link {
+  color: black;
+  padding: 1.2rem 2.5rem;
+  border-radius: 5px;
+  background-color: #e1ff00;
+  transition: 0.3s background ease;
+}
+
+.principal__link:hover {
+  background-color: var(--color-resaltador);
+}
+
+.information {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.information--r {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.information__hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.information__logo {
+  width: 15%;
+}
+
+.information__text {
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.hr--gold {
+  height: 1px;
+  border: none;
+  width: 50%;
+  background-color: var(--color-resaltador);
+}
+
+.information__rooms--text {
+  width: 40%;
+  border: 1px solid black;
+}
+
+.information__img {
+  width: 50%;
 }
