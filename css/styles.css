@@ -140,6 +140,7 @@ footer {
     ),
     url(../media/backgrounds/bg-principal.webp);
   background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,8 +183,8 @@ footer {
 
 .information--r {
   flex-direction: row;
+  align-items: start;
   justify-content: center;
-  gap: 10px;
 }
 
 .information__hotel {
@@ -199,7 +200,7 @@ footer {
 }
 
 .information__text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 50%;
   text-align: center;
   margin-top: 15px;
@@ -212,11 +213,48 @@ footer {
   background-color: var(--color-resaltador);
 }
 
+.information--rooms {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 .information__rooms--text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 40%;
-  border: 1px solid black;
+  margin-right: 15px;
 }
 
 .information__img {
-  width: 50%;
+  width: 40%;
+}
+
+.rooms__title {
+  font-size: 2rem;
+}
+
+.rooms__description {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.link__room--container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rooms__link {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hr__dark {
+  width: 15px !important;
+  height: 1px;
+  background-color: #06090e !important;
 }
