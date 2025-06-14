@@ -172,7 +172,7 @@ footer {
 }
 
 .information {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -182,6 +182,8 @@ footer {
 }
 
 .information--r {
+  height: 70vh !important;
+  margin-top: 30px !important;
   flex-direction: row;
   align-items: start;
   justify-content: center;
@@ -257,4 +259,54 @@ footer {
   width: 15px !important;
   height: 1px;
   background-color: #06090e !important;
+}
+
+.experiences {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 500px;
+  background-color: var(--color-terciario);
+  font-family: "Nunito", sans-serif;
+  padding: 2rem;
+  background-image: url(../media/backgrounds/cartographer.png);
+  background-attachment: fixed;
+}
+
+.experiences__title {
+  color: var(--color-resaltador);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.experiences__gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.experience {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.experience__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.experience__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 700;
 }
