@@ -51,9 +51,6 @@ header {
   gap: 5px;
 }
 
-.header__nav {
-}
-
 .nav__lista {
   display: flex;
   width: fit-content;
@@ -309,4 +306,64 @@ footer {
   font-size: 0.9rem;
   line-height: 1.4;
   font-weight: 700;
+}
+
+@media screen and (max-width: 720px) {
+  .header__logo {
+    width: 20%;
+  }
+
+  .principal--bg {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .principal__content {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+  }
+
+  .information--r {
+    height: 85vh !important;
+  }
+
+  .principal__title {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .information__logo {
+    width: 45%;
+  }
+
+  .information__text {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .information--rooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .information__rooms--text {
+    width: 87%;
+  }
+
+  .rooms__description {
+    font-size: 1rem;
+  }
+
+  .information__img {
+    width: 90%;
+  }
+
+  .experiences__gallery {
+    gap: 20px;
+  }
 }
