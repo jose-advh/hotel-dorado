@@ -377,15 +377,88 @@ footer {
   background-color: #b8932f;
 }
 
-/* Responsive para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .propuestas__contenedor {
-    flex-direction: column;
-    align-items: center;
-  }
+.services {
+  background-color: var(--color-terciario);
+  background-image: url(../media/backgrounds/cartographer.png);
+  background-attachment: fixed;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 720px) {
+.services__title {
+  font-size: 2.2rem;
+  font-family: "Nunito", sans-serif;
+  color: var(--color-resaltador);
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service {
+  background: var(--color-principal);
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service__icon {
+  font-size: 2.5rem;
+  color: var(--color-terciario);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.service__title {
+  font-size: 1.3rem;
+  color: var(--color-terciario);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service__description {
+  font-size: 1rem;
+  color: #2e2e2e;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.service__button {
+  background: var(--color-resaltador);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  color: var(--color-terciario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service__button:hover {
+  background: #b8932f;
+}
+
+@media screen and (max-width: 768px) {
   .header__logo {
     width: 20%;
   }
@@ -432,11 +505,37 @@ footer {
     font-size: 1rem;
   }
 
+  .rooms__title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .experiences__title {
+    font-size: 1.8rem;
+  }
+
+  .propuestas__titulo {
+    font-size: 1.8rem;
+  }
+
   .information__img {
     width: 90%;
   }
 
   .experiences__gallery {
     gap: 20px;
+  }
+
+  .propuestas__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    text-align: center;
+  }
+
+  .service__description {
+    font-size: 0.95rem;
   }
 }
