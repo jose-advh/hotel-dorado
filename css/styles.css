@@ -128,7 +128,7 @@ footer {
 /* Pagina Principal */
 
 .principal--bg {
-  height: 100vh;
+  height: 100dvh;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.6),
@@ -169,17 +169,17 @@ footer {
 }
 
 .information {
-  height: 90vh;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-family: "Nunito", sans-serif;
+  margin-bottom: 100px;
 }
 
 .information--r {
-  height: 70vh !important;
   margin-top: 30px !important;
   flex-direction: row;
   align-items: start;
@@ -228,6 +228,7 @@ footer {
 
 .information__img {
   width: 40%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .rooms__title {
@@ -247,9 +248,10 @@ footer {
 }
 
 .rooms__link {
-  color: goldenrod;
+  color: chocolate;
   font-weight: bold;
   font-size: 1.2rem;
+  text-decoration: underline;
 }
 
 .hr__dark {
@@ -261,12 +263,12 @@ footer {
 .experiences {
   width: 100%;
   height: fit-content;
-  margin-bottom: 500px;
   background-color: var(--color-terciario);
   font-family: "Nunito", sans-serif;
   padding: 2rem;
   background-image: url(../media/backgrounds/cartographer.png);
   background-attachment: fixed;
+  margin-bottom: 100px;
 }
 
 .experiences__title {
@@ -308,6 +310,81 @@ footer {
   font-weight: 700;
 }
 
+.propuestas {
+  height: fit-content;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.propuestas__titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.propuestas__contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.propuesta {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.propuesta__imagen img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.propuesta__titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #000;
+}
+
+.propuesta__descripcion {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.propuesta__boton {
+  background-color: #d4af37;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.propuesta__boton:hover {
+  background-color: #b8932f;
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .propuestas__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .header__logo {
     width: 20%;
@@ -322,10 +399,6 @@ footer {
     justify-content: center;
     align-items: center;
     border: 1px solid white;
-  }
-
-  .information--r {
-    height: 85vh !important;
   }
 
   .principal__title {
