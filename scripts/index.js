@@ -2,7 +2,8 @@
 
 const lugares = document.getElementById("lugares");
 const listaLugares = document.getElementById("listaLugares");
-
+const iconMenuMobile = document.getElementById('iconMenuMobile');
+const menuOverlay = document.getElementById("menuOverlay");
 // Funcionalidades
 
 function mostrarLista() {
@@ -20,3 +21,7 @@ function ocultarListaSiNoHayHover() {
 lugares.addEventListener("mouseenter", mostrarLista);
 lugares.addEventListener("mouseleave", ocultarListaSiNoHayHover);
 listaLugares.addEventListener("mouseleave", ocultarListaSiNoHayHover);
+
+iconMenuMobile.addEventListener("click", () => {
+  menuOverlay.classList.toggle("active");
+});
