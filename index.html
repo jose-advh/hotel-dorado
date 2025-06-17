@@ -275,10 +275,12 @@
             ofrecer una experiencia acogedora, sin caer en excesos, pero con un
             toque de distinción que lo hace inolvidable.
           </p>
-          <button type="button" class="map__button">Vista 360º</button>
+          <button type="button" class="map__button" id="abrirIframe360">
+            Vista 360º
+          </button>
         </article>
 
-        <!-- <iframe
+        <iframe
           src="https://www.google.com/maps/embed?pb=!4v1750174829239!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3FyWi1oekFF!2m2!1d11.00368226980713!2d-74.8165630798946!3f325.7020086398377!4f-3.1603339298822135!5f0.7820865974627469"
           width="600"
           height="450"
@@ -286,7 +288,16 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe> -->
+          class="vist__360 display-none"
+          id="iframe360"
+        ></iframe>
+
+        <img
+          src="./media/icons/close.svg"
+          alt="Cerrar pestaña"
+          class="button__close display-none"
+          id="buttonClose360"
+        />
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco"
