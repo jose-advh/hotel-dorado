@@ -648,6 +648,7 @@ footer {
   .map__llegar {
     width: 100%;
     padding: 1rem;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .map__360 {
