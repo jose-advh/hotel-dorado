@@ -401,6 +401,7 @@ footer {
   background-attachment: fixed;
   padding: 4rem 2rem;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .services__title {
@@ -474,6 +475,20 @@ footer {
 
 .service__button:hover {
   background: #b8932f;
+}
+
+.mapa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  padding: 2rem;
+  margin-bottom: 100px;
+}
+
+.mapa__llegar {
+  background-color: var(--color-resaltador);
+  padding: 1rem;
 }
 
 @media screen and (max-width: 768px) {
