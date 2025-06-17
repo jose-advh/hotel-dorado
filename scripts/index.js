@@ -2,8 +2,9 @@
 
 const lugares = document.getElementById("lugares");
 const listaLugares = document.getElementById("listaLugares");
-const iconMenuMobile = document.getElementById('iconMenuMobile');
+const iconMenuMobile = document.getElementById("iconMenuMobile");
 const menuOverlay = document.getElementById("menuOverlay");
+const listaDesplegable = document.querySelectorAll(".list__down");
 // Funcionalidades
 
 function mostrarLista() {
@@ -24,4 +25,9 @@ listaLugares.addEventListener("mouseleave", ocultarListaSiNoHayHover);
 
 iconMenuMobile.addEventListener("click", () => {
   menuOverlay.classList.toggle("active");
+  listaDesplegable.forEach((lista) => {
+    setTimeout(() => {
+      lista.classList.toggle("display-none");
+    }, 500);
+  });
 });

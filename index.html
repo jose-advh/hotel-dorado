@@ -36,9 +36,29 @@
           <hr />
         </ul>
 
-        <article class="menu--mobile">
-          <img src="./media/icons/menu.svg" class="nav__menu--icon" alt="" id="iconMenuMobile">
-        </article>
+        <nav class="menu--mobile">
+          <img
+            src="./media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Escensiales</h2>
+            <li><a href="#" class="nav__link link__down">Inicio</a></li>
+            <li><a href="#" class="nav__link link__down">Historia</a></li>
+            <li><a href="#" class="nav__link link__down">Habitaciones</a></li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="#" class="nav__link link__down">Salas</a></li>
+            <li><a href="#" class="nav__link link__down">Eventos</a></li>
+
+            <li><a href="#" class="nav__link link__down">Restaurantes</a></li>
+          </ul>
+        </nav>
       </nav>
     </header>
     <div class="black-curtain" id="menuOverlay"></div>
@@ -246,14 +266,38 @@
           </article>
         </div>
       </section>
-      <section class="mapa">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-
-        <article class="mapa__llegar">
-          <h2>¿Cómo llegar?</h2>
+      <section class="map">
+        <article class="map__llegar">
+          <h2 class="map__title">¿Por qué nosotros?</h2>
+          <p class="map__description">
+            el Hotel El Ensueño Dorado representa la combinación perfecta entre
+            elegancia y sencillez. Cada rincón está cuidadosamente diseñado para
+            ofrecer una experiencia acogedora, sin caer en excesos, pero con un
+            toque de distinción que lo hace inolvidable.
+          </p>
+          <button type="button" class="map__button">Vista 360º</button>
         </article>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1750174829239!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3FyWi1oekFF!2m2!1d11.00368226980713!2d-74.8165630798946!3f325.7020086398377!4f-3.1603339298822135!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!4v1750174829239!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ3FyWi1oekFF!2m2!1d11.00368226980713!2d-74.8165630798946!3f325.7020086398377!4f-3.1603339298822135!5f0.7820865974627469"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe> -->
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map__360"
+        ></iframe>
       </section>
     </main>
     <footer>
