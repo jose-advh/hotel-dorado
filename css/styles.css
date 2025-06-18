@@ -696,3 +696,163 @@ footer {
     order: 2;
   }
 }
+
+
+/* Rooms  */
+
+.rooms {
+  padding-top: 60px;
+  font-family: "Old Standard TT", serif;
+
+}
+
+.rooms__introduction {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  ), url(../media/backgrounds/rooms.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms__title-p {
+  font-size: 6rem;
+  color: var(--color-resaltador);
+}
+
+.rooms__description-p {
+  width: 70%;
+  color: white;
+  text-align: center;
+}
+
+
+.filter__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  background-color: var(--color-terciario);
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 100px;
+}
+
+.filter__inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter__input--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.filter__input {
+  padding: .5rem;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.filter__button {
+  padding: .5rem 2rem;
+  background-color: var(--color-resaltador);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.search__room {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 90vh;
+  margin-bottom: 100px;
+
+}
+
+.search__filter {
+  width: 25%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-color: var(--color-terciario);
+}
+
+.search__map {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.rooms__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+.room {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid;
+  border-color: var(--color-resaltador);
+  border-radius: 15px;
+}
+
+.room__information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.room__img {
+  border-radius: 15px;
+}
+
+.room_title {
+  color: var(--color-resaltador);
+}
+
+.room__button {
+  padding: .8rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-resaltador);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.room__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.room__button:hover {
+  background-color: var(--color-principal);
+}
