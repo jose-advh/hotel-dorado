@@ -1,3 +1,13 @@
-{
-    
-}
+[
+    {
+        "ruta_img": "../media/imagen.png",
+        "name": "Habitacion Premium",
+        "description": "Lorem ipsum.",
+        "tags": [
+            "barato", "comodo", "elegante"
+        ],
+        "comodidades": [
+            "2 Habitaciones", "Wifi Gratis", "Piscina Incluida"
+        ]
+    }
+]
