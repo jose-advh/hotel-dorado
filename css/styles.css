@@ -940,3 +940,243 @@ button {
 
 
 }
+
+
+
+/* Sección de historias de empleados */
+main {
+  padding-top: 0px;
+  height: auto;
+  flex: 1;
+}
+.contiene_historias {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+position: relative;
+justify-content: space-evenly;
+top: 10vw;
+gap: 24px;
+height: fit-content;
+margin-bottom: 16%;
+}
+.cuadros_empleados {
+  padding: 16px;
+  width: min(90%, 280px);
+  height: 600px;
+  gap: 40px;
+  background: var(--color-principal);
+  border-radius: 40px;
+}
+.linea_horizontal {
+  display: block;
+  margin: auto;
+  background-color: var(--color-resaltador);
+  width: 80%;
+  height: 6px;
+  position: relative;
+  top: 92%;
+}
+.foto_empleado {
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 126px;
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+.foto_empleado img{
+  border-radius: 50%;
+  width: 126px;
+  height: 126px;
+  display: block;
+  margin: auto;
+}
+
+.historia_empleado h4 {
+  margin-bottom: 14px;
+}
+.historia_empleado p, .historia_empleado h4 {
+  text-align: center;
+  font-size: clamp(13.6px, 4vw + 1rem, 16px);
+}
+
+.descripcion_historias {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  font-style: italic;
+  color: gray;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.contiene_descripcion_h {
+  display: block;
+  margin: auto;
+text-align: left;
+justify-content: center;
+align-items: center;
+
+}
+.descripcion_historias p {
+  justify-content: center;
+font-size: clamp(13.6px, 4vw + 1rem, 16px);
+}
+.contiene_tit_hist {
+  flex-wrap: wrap;
+  position: relative;
+  top: 10vw;
+  height: 150px;
+  position:relative;
+  text-align: center;
+  justify-content: center;
+}
+.titulo_historias {
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  color: #06090E;
+  font-weight: bold;
+  font-size: 36px;
+  font-size: clamp(27px, 4vw + 1rem, 40px);
+}
+
+
+@media (max-width: 600px) {
+  .cuadros_empleados {
+    width: 90%;
+  }
+
+  .descripcion_historias {
+    padding: 40px;
+    left: 10%;
+    text-align: center;
+  }
+}
+
+/*Sección de Sobre el hotel*/
+.main_sobre_hotel {
+  height: 300vh;
+}
+.contenedor_total_sb_ht {
+  height: 300%;
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top: 12vw;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: fit-content;
+gap: 350px;
+}
+.caja_sb_ht {
+  width: 74%;
+  height: 470px;
+  background-color: #ece1ce;
+  border-radius: 40px;
+  padding: 2.5%;
+  display: flex;
+}
+.imagen_centrada {
+  justify-content: center;
+  align-items: center;
+
+}
+.caja_sb_ht h1, .caja_sb_ht p {
+  margin-left: -38px;
+}
+.descripcion_sb_ht {
+  width: 70vh;
+  max-width: 1000px;
+  text-align: justify;
+  
+}
+.descripcion_sb_ht p, .descripcion_sb_ht h1 {
+  font-size: clamp(13.6px, 4vw + 1rem, 16px);
+  line-height: 1.45;
+}
+.descripcion_sb_ht h1 {
+  margin-bottom: 16px;
+}
+.imagen_sb_ht {
+  width: 37%;
+  height: 81%;
+  margin-left: 6%;
+  min-width: 40%;
+}
+.imagen_sb_ht img {
+  border: 4px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.imgen_sb_int {
+  box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
+  -webkit-box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
+  -moz-box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
+}
+.sombra_sb_ht {
+  box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+-webkit-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+-moz-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+}
+
+
+@media (max-width: 1680px) {
+  .contenedor_total_sb_ht {
+    top: 14vw;
+  }
+  .caja_sb_ht {
+    width: 90%;
+    height: fit-content;
+  }
+  .imagen_sb_ht {
+    height: 80%;
+    width: 30%;
+  }
+  .descripcion_sb_ht {
+    max-height: 500px;
+  }
+  .descripcion_sb_ht p, .descripcion_sb_ht h1 {
+    font-size: clamp(8.6px, 2vw + 1rem, 15px);
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contenedor_total_sb_ht {
+    top: 24vw;
+  }
+  .caja_sb_ht {
+    width: 92%;
+    height: 90%;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .imagen_sb_ht {
+    margin-top: 6%;
+    min-width: 80%;
+  }
+  .descripcion_sb_ht p, .descripcion_sb_ht h1{
+    font-size: clamp(4.6px, 2vw + 1rem, 10px);
+  }
+  .descripcion_sb_ht {
+    width: 100%;
+  }
+}
+
+@media (max-height: 721px) {
+  .caja_sb_ht {
+    gap: 4px;
+    margin-bottom: -150px;
+  }
+}
+@media (min-height: 1000px) {
+  .main_sobre_hotel {
+    height: 2140px;
+  }
+}
+
