@@ -59,7 +59,7 @@
       </header>
       <div class="black-curtain" id="menuOverlay"></div>
       <main class="rooms">
-        <section class="rooms__introduction">
+          <section class="rooms__introduction">
             <h2 class="rooms__title-p">Habitaciones</h2>
             <p class="rooms__description-p"> 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex rem aliquid autem hic et expedita a nisi deserunt labore fugit ad deleniti, fuga optio corporis facere praesentium neque minima!
@@ -69,15 +69,20 @@
             <article class="filter__inputs">
                 <div class="filter__input--container">
                     <label for="checkin">Check In</label>
-                    <input type="text" class="filter__input" id="checkin">
+                    <input type="date" class="filter__input" id="checkin">
                 </div>
                 <div class="filter__input--container">
                     <label for="checkout">Check Out</label>
-                    <input type="text" class="filter__input" id="checkin">
+                    <input type="date" class="filter__input" id="checkin">
                 </div>
                 <div class="filter__input--container">
                     <label for="adults">Adultos</label>
-                    <input type="text" class="filter__input" id="adults">
+                    <select type="number" class="filter__input" id="adults">
+                      <option value="0" disabled selected>Seleccione una opción</option>
+                      <option value="1">1 Adulto</option>
+                      <option value="2">2 Adultos</option>
+                      <option value="3">3 Adultos</option>
+                    </select>
                 </div>
             </article>
             <button type="button" class="filter__button">
@@ -104,7 +109,7 @@
                         <h2 class="room_title">Habitacíon Premium</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
                         <article class="room__buttons">
-                            <button type="button" class="room__button">Reservar</button>
+                            <button class="neon-pulse">Reservar</button>
                             <button type="button" class="room__button">Comodidades</button>
                         </article>
                     </section>
@@ -115,7 +120,18 @@
                         <h2 class="room_title">Habitacíon Premium</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
                         <article class="room__buttons">
-                            <button type="button" class="room__button">Reservar</button>
+                          <button class="neon-pulse">Reservar</button>
+                            <button type="button" class="room__button">Comodidades</button>
+                        </article>
+                    </section>
+                </article>
+                <article class="room">
+                    <img src="../media/rooms/room_test.webp" alt="Imagen de la habitación" class="room__img">
+                    <section class="room__information">
+                        <h2 class="room_title">Habitacíon Premium</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
+                        <article class="room__buttons">
+                          <button class="neon-pulse">Reservar</button>
                             <button type="button" class="room__button">Comodidades</button>
                         </article>
                     </section>
@@ -123,5 +139,52 @@
             </section>
         </section>
       </main>
+      <footer>
+        <section class="footer__content">
+          <article class="flex--col">
+            <h2 class="footer__subtitle">Contáctanos</h2>
+            <p class="footer__text">(605) 3100800</p>
+            <p class="footer__text">(+57) 318 366 1799</p>
+          </article>
+          <article class="flex--col">
+            <h2 class="footer__subtitle">Encuéntranos</h2>
+            <p class="footer__text">Cra 54 Calle 70-10.</p>
+            <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+          </article>
+          <article class="flex--col">
+            <h2 class="footer__subtitle">Siguenos</h2>
+            <div class="flex">
+              <a href="#">
+                <img
+                  src="../media/icons/instagram.svg"
+                  class="footer__img"
+                  alt="Logotipo de Instagram"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../media/icons/faceboock.svg"
+                  class="footer__img"
+                  alt="Logotipo de Facebook"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../media/icons/twitter.svg"
+                  class="footer__img"
+                  alt="Logotipo de Twitter"
+                />
+              </a>
+            </div>
+          </article>
+        </section>
+        <article class="footer__img--content">
+          <img
+            src="../media/imgs/LOGO_HOTEL 4.png"
+            class="footer__logo"
+            alt="Logo hotel El Ensueño Dorado"
+          />
+        </article>
+      </footer>
 </body>
 </html>
