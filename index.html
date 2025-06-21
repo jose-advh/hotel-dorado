@@ -9,6 +9,7 @@
     />
     <title>Hotel el Ensueño Dorado</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="./scripts/index.js" defer></script>
   </head>
   <body>
@@ -96,13 +97,19 @@
     <main>
       <section class="principal--bg">
         <article class="principal__content principal__content">
-          <h1 class="principal__title">Hotel con hospitalidad auténtica</h1>
-        </article>
-        <a href="#" class="principal__link">RESERVAR AHORA</a>
+          <div data-aos="fade-right">
+            <h1 class="principal__title">Hotel con hospitalidad auténtica</h1>
+          </article>
+          <div data-aos="fade-right">  
+            <a href="#" class="principal__link">RESERVAR AHORA</a>
+          </div>
+          </div>
       </section>
       <section class="information">
         <article class="information__hotel">
-          <img
+
+          <div data-aos="fade-up-left" class="information__hotel">
+            <img
             src="./media/imgs/LOGO_HOTEL 4.png"
             alt="Logo del Hotel"
             class="information__logo"
@@ -120,37 +127,42 @@
             detalles y la luminosa sonrisa de nuestro personal no precisan
             palabras.
           </p>
+          </div>
         </article>
       </section>
       <section class="information information--r">
         <article class="information--rooms">
           <article class="information__rooms--text">
-            <h2 class="rooms__title">Nuestras Habitaciones</h2>
-            <p class="rooms__description">
-              Nuestras habitaciones de lujo garantizan una experiencia
-              gratificante, con detalles elegantes. Nuestros muebles han sido
-              cuidadosamente seleccionados para ofrecer el máximo confort,
-              combinando diseño moderno con funcionalidad. Cada rincón está
-              pensado para brindarte bienestar, ya sea que busques descanso,
-              inspiración o una estadía inolvidable.
-            </p>
-            <div class="link__room--container">
-              <div class="hr__dark"></div>
-              <a href="#" class="rooms__link">Ver Habitaciones</a>
+            <div data-aos="fade-right">
+              <h2 class="rooms__title">Nuestras Habitaciones</h2>
+              <p class="rooms__description">
+                Nuestras habitaciones de lujo garantizan una experiencia
+                gratificante, con detalles elegantes. Nuestros muebles han sido
+                cuidadosamente seleccionados para ofrecer el máximo confort,
+                combinando diseño moderno con funcionalidad. Cada rincón está
+                pensado para brindarte bienestar, ya sea que busques descanso,
+                inspiración o una estadía inolvidable.
+              </p>
+              <div class="link__room--container">
+                <div class="hr__dark"></div>
+                <a href="#" class="rooms__link">Ver Habitaciones</a>
+              </div>
             </div>
           </article>
-          <img
+          <div data-aos="fade-left" class="information__img">
+            <img
             src="./media/imgs/img_habitaciones.png"
             alt="Imagen de una Habitacion"
-            class="information__img"
+            class="rooms__img"
           />
+          </div>
         </article>
       </section>
       <section class="experiences">
         <h2 class="experiences__title">Experiencias Doradas</h2>
 
         <section class="experiences__gallery">
-          <article class="experience">
+          <div class="experience" data-aos="fade-up-right">
             <figure class="experience__figure">
               <img
                 src="./media/photos/markzuck.webp"
@@ -163,8 +175,8 @@
                 mundo.
               </figcaption>
             </figure>
-          </article>
-          <article class="experience">
+          </div>
+          <div class="experience" data-aos="fade-up">
             <figure class="experience__figure">
               <img
                 src="./media/photos/llf.webp"
@@ -176,9 +188,9 @@
                 excelencia, tranquilidad y una visión clara de servicio premium.
               </figcaption>
             </figure>
-          </article>
+          </div>
 
-          <article class="experience">
+          <div class="experience" data-aos="fade-up-left">
             <figure class="experience__figure">
               <img
                 src="./media/photos/alexchar.webp"
@@ -190,14 +202,14 @@
                 espacio perfecto para renovar energías y disfrutar con calma.
               </figcaption>
             </figure>
-          </article>
+          </div>
         </section>
       </section>
       <section class="propuestas" aria-label="Propuestas para tu estancia">
         <h2 class="propuestas__titulo">Propuestas para tu estancia</h2>
 
         <div class="propuestas__contenedor">
-          <article class="propuesta">
+          <div class="propuesta" data-aos="fade-up">
             <figure class="propuesta__imagen">
               <img
                 src="./media/photos/romanticismo.png"
@@ -207,9 +219,9 @@
             <h3 class="propuesta__titulo">Romanticismo</h3>
             <p class="propuesta__descripcion">Mágica escapada de pareja</p>
             <button class="propuesta__boton">Saber Más</button>
-          </article>
+          </div>
 
-          <article class="propuesta">
+          <div class="propuesta" data-aos="fade-up">
             <figure class="propuesta__imagen">
               <img
                 src="./media/photos/regalate.png"
@@ -219,9 +231,9 @@
             <h3 class="propuesta__titulo">Regálate una suite</h3>
             <p class="propuesta__descripcion">Increíble estancia en suite</p>
             <button class="propuesta__boton">Saber Más</button>
-          </article>
+          </div>
 
-          <article class="propuesta">
+          <div class="propuesta" data-aos="fade-up">
             <figure class="propuesta__imagen">
               <img
                 src="./media/photos/reservaydescuento.png"
@@ -233,14 +245,14 @@
               Alójate por lo menos 3 días en el hotel
             </p>
             <button class="propuesta__boton">Saber Más</button>
-          </article>
+          </div>
         </div>
       </section>
       <section class="services" aria-label="Servicios del hotel">
         <h2 class="services__title">Servicios</h2>
 
-        <div class="services__container">
-          <article class="service">
+        <div class="services__container" data-aos="fade-right">
+          <div class="service">
             <span class="service__icon" aria-hidden="true">🛏️</span>
             <h3 class="service__title">Habitaciones</h3>
             <p class="service__description">
@@ -251,9 +263,9 @@
             <button class="service__button" aria-label="Más sobre habitaciones">
               →
             </button>
-          </article>
+          </div>
 
-          <article class="service">
+          <div class="service" data-aos="fade-right">
             <span class="service__icon" aria-hidden="true">📢</span>
             <h3 class="service__title">Planes y Ofertas</h3>
             <p class="service__description">
@@ -267,9 +279,9 @@
             >
               →
             </button>
-          </article>
+          </div>
 
-          <article class="service">
+          <div class="service" data-aos="fade-left">
             <span class="service__icon" aria-hidden="true">🎉</span>
             <h3 class="service__title">Eventos</h3>
             <p class="service__description">
@@ -279,9 +291,9 @@
             <button class="service__button" aria-label="Más sobre eventos">
               →
             </button>
-          </article>
+          </div>
 
-          <article class="service">
+          <div class="service" data-aos="fade-left">
             <span class="service__icon" aria-hidden="true">🍽️</span>
             <h3 class="service__title">Restaurantes y Bares</h3>
             <p class="service__description">
@@ -294,7 +306,7 @@
             >
               →
             </button>
-          </article>
+          </div>
         </div>
       </section>
       <section class="map">
@@ -389,5 +401,9 @@
         />
       </article>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
