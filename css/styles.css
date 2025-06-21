@@ -609,7 +609,7 @@ footer {
   }
 
   .header__logo-link {
-    width: 15%;
+    width: 18%;
   }
 
   .information__logo {
@@ -941,10 +941,9 @@ button {
 }
 
 /* Sección de historias de empleados */
-main {
-  padding-top: 0px;
-  height: auto;
-  flex: 1;
+.empleados--main {
+  padding-top: 10px;
+  font-family: "Nunito", sans-serif;
 }
 .contiene_historias {
   width: 100%;
@@ -1039,6 +1038,11 @@ main {
 }
 
 @media (max-width: 600px) {
+  .empleados--main {
+    padding-top: 60px;
+    font-family: "Nunito", sans-serif;
+  }
+
   .cuadros_empleados {
     width: 90%;
   }
