@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Ensueño Dorado - Salas</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li><a href="#" class="nav__link">Historia</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="#" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li><a href="#" class="nav__link link__down">Historia</a></li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="#" class="nav__link link__down">Salas</a></li>
+            <li><a href="#" class="nav__link link__down">Eventos</a></li>
+
+            <li><a href="#" class="nav__link link__down">Restaurantes</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+
+    <main class="main-sala">
+      <section class="sala-section">
+        <img
+          src="../media/imgs/lobby.jpg"
+          alt="Lobby del hotel"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Lobby</h2>
+          <p class="sala-descripcion">
+            Un espacio amplio y elegante para recibirte con comodidad. Nuestro
+            lobby combina diseño moderno con un ambiente acogedor para que tu
+            experiencia comience desde el primer momento.
+          </p>
+        </div>
+      </section>
+
+      <section class="sala-section">
+        <img
+          src="../media/imgs/restaurante.png"
+          alt="Restaurante del hotel"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Restaurante</h2>
+          <p class="sala-descripcion">
+            Disfruta de una experiencia culinaria de primer nivel con platos
+            locales e internacionales. Nuestro restaurante ofrece un ambiente
+            sofisticado y sabores únicos.
+          </p>
+        </div>
+      </section>
+
+      <section class="sala-section">
+        <img
+          src="../media/imgs/sala_juegos.jpg"
+          alt="Sala de juegos"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Sala de Juegos</h2>
+          <p class="sala-descripcion">
+            Diversión asegurada para grandes y chicos. Contamos con consolas,
+            mesa de billar, futbolín y más, en un entorno cómodo y entretenido.
+          </p>
+        </div>
+      </section>
+
+      <section class="sala-section">
+        <img
+          src="../media/imgs/bar.jpg"
+          alt="Bar del hotel"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Bar</h2>
+          <p class="sala-descripcion">
+            Relájate con nuestra amplia selección de cócteles, vinos y bebidas
+            en un ambiente sofisticado y tranquilo. Ideal para cerrar el día con
+            estilo.
+          </p>
+        </div>
+      </section>
+      <section class="sala-section">
+        <img
+          src="../media/imgs/spa.webp"
+          alt="Spa del Hotel"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Spa</h2>
+          <p class="sala-descripcion">
+            Un oasis de relajación donde podrás disfrutar de tratamientos
+            corporales, faciales y acceso a sauna y jacuzzi, pensado para
+            renovar tu energía.
+          </p>
+        </div>
+      </section>
+
+      <section class="sala-section">
+        <img
+          src="../media/imgs/sala_masajes.jpg"
+          alt="Sala de Masajes"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Sala de Masajes</h2>
+          <p class="sala-descripcion">
+            Nuestro personal calificado te brinda masajes relajantes y
+            terapéuticos en un ambiente tranquilo. Ideal para liberar el estrés
+            y mejorar tu bienestar.
+          </p>
+        </div>
+      </section>
+      <section class="sala-section">
+        <img
+          src="../media/imgs/gimnasio.jpg"
+          alt="Gimnasio del Hotel"
+          class="sala-image"
+        />
+        <div class="sala-text">
+          <h2 class="sala-title">Gimnasio</h2>
+          <p class="sala-descripcion">
+            Mantente en forma durante tu estadía. Nuestro gimnasio está equipado
+            con máquinas modernas para entrenamiento cardiovascular y de fuerza.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
+</html>

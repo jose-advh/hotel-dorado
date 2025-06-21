@@ -114,8 +114,12 @@ header {
   background-color: var(--color-terciario);
 }
 
+.header__logo-link {
+  width: 6%;
+}
+
 .header__logo {
-  width: 5%;
+  width: 100%;
 }
 
 .nav__link {
@@ -188,9 +192,6 @@ footer {
   justify-content: center;
   align-items: start;
   padding: 0 2rem;
-}
-
-.principal__content {
 }
 
 .principal__title {
@@ -587,10 +588,6 @@ footer {
     width: 2rem;
   }
 
-  .header__logo {
-    width: 20%;
-  }
-
   .black-curtain {
     display: flex;
   }
@@ -609,6 +606,10 @@ footer {
     text-align: center;
     font-size: 3rem;
     width: 100%;
+  }
+
+  .header__logo-link {
+    width: 15%;
   }
 
   .information__logo {
@@ -698,7 +699,6 @@ footer {
   }
 }
 
-
 /* Rooms  */
 
 .rooms {
@@ -707,16 +707,16 @@ footer {
   height: fit-content;
 }
 
-
 .rooms__introduction {
   width: 100%;
   height: 80vh;
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0)
-  ), url(../media/backgrounds/rooms.png);
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../media/backgrounds/rooms.png);
   background-size: cover;
   background-attachment: fixed;
 
@@ -737,7 +737,6 @@ footer {
   font-size: 1.3rem;
   text-align: center;
 }
-
 
 .filter__container {
   display: flex;
@@ -766,20 +765,20 @@ footer {
 }
 
 .filter__input {
-  padding: .5rem;
+  padding: 0.5rem;
   outline: none;
   border: none;
   border-radius: 15px;
 }
 
 .filter__button {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: var(--color-resaltador);
   border-radius: 15px;
   outline: none;
   border: none;
   cursor: pointer;
-  
+
   display: flex;
   gap: 5px;
   align-items: center;
@@ -809,7 +808,6 @@ footer {
 
 .rooms {
   height: auto;
-  
 }
 
 .rooms__container {
@@ -840,7 +838,6 @@ footer {
 .room__img {
   border-radius: 15px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
-
 }
 
 .room_title {
@@ -848,13 +845,13 @@ footer {
 }
 
 .room__button {
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   border: none;
   outline: none;
   background-color: var(--color-resaltador);
   border-radius: 10px;
   cursor: pointer;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 .room__buttons {
@@ -866,9 +863,8 @@ footer {
   background-color: var(--color-principal);
 }
 
-
 button {
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
@@ -889,13 +885,18 @@ button {
 }
 
 @keyframes neon-pulse {
-  0% { box-shadow: 0 0 5px #e6fcab, 0 0 5px #e6fcab, 0 0 7.5px #e6fcab; }
-  50% { box-shadow: 0 0 7.5px #e6fcab, 0 0 12.5px #e6fcab, 0 0 17.5 #e6fcab; }
-  100% { box-shadow: 0 0 5px #e6fcab, 0 0 10px #e6fcab, 0 0 15px #e6fcab; }
+  0% {
+    box-shadow: 0 0 5px #e6fcab, 0 0 5px #e6fcab, 0 0 7.5px #e6fcab;
+  }
+  50% {
+    box-shadow: 0 0 7.5px #e6fcab, 0 0 12.5px #e6fcab, 0 0 17.5 #e6fcab;
+  }
+  100% {
+    box-shadow: 0 0 5px #e6fcab, 0 0 10px #e6fcab, 0 0 15px #e6fcab;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .filter__container {
     flex-direction: column;
     gap: 15px;
@@ -937,11 +938,7 @@ button {
     width: 90%;
     margin: auto;
   }
-
-
 }
-
-
 
 /* Sección de historias de empleados */
 main {
@@ -953,12 +950,12 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-position: relative;
-justify-content: space-evenly;
-top: 10vw;
-gap: 24px;
-height: fit-content;
-margin-bottom: 16%;
+  position: relative;
+  justify-content: space-evenly;
+  top: 10vw;
+  gap: 24px;
+  height: fit-content;
+  margin-bottom: 16%;
 }
 .cuadros_empleados {
   padding: 16px;
@@ -985,7 +982,7 @@ margin-bottom: 16%;
   margin-bottom: 24px;
   margin-top: 12px;
 }
-.foto_empleado img{
+.foto_empleado img {
   border-radius: 50%;
   width: 126px;
   height: 126px;
@@ -996,7 +993,8 @@ margin-bottom: 16%;
 .historia_empleado h4 {
   margin-bottom: 14px;
 }
-.historia_empleado p, .historia_empleado h4 {
+.historia_empleado p,
+.historia_empleado h4 {
   text-align: center;
   font-size: clamp(13.6px, 4vw + 1rem, 16px);
 }
@@ -1013,21 +1011,20 @@ margin-bottom: 16%;
 .contiene_descripcion_h {
   display: block;
   margin: auto;
-text-align: left;
-justify-content: center;
-align-items: center;
-
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
 .descripcion_historias p {
   justify-content: center;
-font-size: clamp(13.6px, 4vw + 1rem, 16px);
+  font-size: clamp(13.6px, 4vw + 1rem, 16px);
 }
 .contiene_tit_hist {
   flex-wrap: wrap;
   position: relative;
   top: 10vw;
   height: 150px;
-  position:relative;
+  position: relative;
   text-align: center;
   justify-content: center;
 }
@@ -1035,12 +1032,11 @@ font-size: clamp(13.6px, 4vw + 1rem, 16px);
   inset: 0;
   margin: auto;
   text-align: center;
-  color: #06090E;
+  color: #06090e;
   font-weight: bold;
   font-size: 36px;
   font-size: clamp(27px, 4vw + 1rem, 40px);
 }
-
 
 @media (max-width: 600px) {
   .cuadros_empleados {
@@ -1061,15 +1057,15 @@ font-size: clamp(13.6px, 4vw + 1rem, 16px);
 .contenedor_total_sb_ht {
   height: 300%;
   width: 100%;
-display: flex;
-flex-wrap: wrap;
-position: relative;
-top: 12vw;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: fit-content;
-gap: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 12vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 350px;
 }
 .caja_sb_ht {
   width: 74%;
@@ -1082,18 +1078,18 @@ gap: 350px;
 .imagen_centrada {
   justify-content: center;
   align-items: center;
-
 }
-.caja_sb_ht h1, .caja_sb_ht p {
+.caja_sb_ht h1,
+.caja_sb_ht p {
   margin-left: -38px;
 }
 .descripcion_sb_ht {
   width: 70vh;
   max-width: 1000px;
   text-align: justify;
-  
 }
-.descripcion_sb_ht p, .descripcion_sb_ht h1 {
+.descripcion_sb_ht p,
+.descripcion_sb_ht h1 {
   font-size: clamp(13.6px, 4vw + 1rem, 16px);
   line-height: 1.45;
 }
@@ -1118,11 +1114,10 @@ gap: 350px;
   -moz-box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
 }
 .sombra_sb_ht {
-  box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
--webkit-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
--moz-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+  box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
+  -webkit-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
+  -moz-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
 }
-
 
 @media (max-width: 1680px) {
   .contenedor_total_sb_ht {
@@ -1139,7 +1134,8 @@ gap: 350px;
   .descripcion_sb_ht {
     max-height: 500px;
   }
-  .descripcion_sb_ht p, .descripcion_sb_ht h1 {
+  .descripcion_sb_ht p,
+  .descripcion_sb_ht h1 {
     font-size: clamp(8.6px, 2vw + 1rem, 15px);
     margin-left: 1%;
   }
@@ -1160,7 +1156,8 @@ gap: 350px;
     margin-top: 6%;
     min-width: 80%;
   }
-  .descripcion_sb_ht p, .descripcion_sb_ht h1{
+  .descripcion_sb_ht p,
+  .descripcion_sb_ht h1 {
     font-size: clamp(4.6px, 2vw + 1rem, 10px);
   }
   .descripcion_sb_ht {
@@ -1180,3 +1177,173 @@ gap: 350px;
   }
 }
 
+/*Salas*/
+
+.main-sala {
+  padding-top: 70px;
+  font-family: "Nunito", sans-serif;
+}
+
+.sala-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6%;
+  gap: 2rem;
+  background-color: var(--color-secundario);
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.sala-section:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: #f4f0e9;
+}
+
+.sala-image {
+  width: 45%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sala-image:hover {
+  transform: scale(1.03);
+}
+
+.sala-text {
+  width: 50%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sala-title {
+  font-size: 2.2rem;
+  color: var(--color-terciario);
+  font-weight: 700;
+  border-left: 5px solid var(--color-resaltador);
+  padding-left: 10px;
+}
+
+.sala-descripcion {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .sala-section {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .sala-image {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .sala-text {
+    width: 100%;
+    padding: 1rem 0;
+    gap: 0.8rem;
+  }
+
+  .sala-title {
+    font-size: 1.8rem;
+  }
+
+  .sala-descripcion {
+    font-size: 1rem;
+  }
+}
+
+/*login*/
+
+.login-page {
+  background-image: url("../media/backgrounds/fondo_login.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Nunito", sans-serif;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-terciario);
+  border-bottom: 2px solid var(--color-resaltador);
+  padding-bottom: 0.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-form label {
+  font-weight: bold;
+  color: var(--color-terciario);
+}
+
+.login-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--color-resaltador);
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+}
+
+.login-btn {
+  background-color: var(--color-resaltador);
+  color: var(--color-terciario);
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #bfa134;
+}
+
+.login-link {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: var(--color-terciario);
+  font-weight: bold;
+  text-decoration: underline;
+}

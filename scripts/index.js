@@ -8,6 +8,8 @@ const buttonClose360 = document.getElementById("buttonClose360");
 const abrirIframe360 = document.getElementById("abrirIframe360");
 const listaDesplegable = document.querySelectorAll(".list__down");
 
+console.log("Hello World");
+
 // Funcionalidades
 function mostrarLista() {
   if (listaLugares) listaLugares.classList.remove("display-none");
