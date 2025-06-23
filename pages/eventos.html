@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Inolvidables</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/restaurante.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Della+Respira&family=Lavishly+Yours&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../scripts/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="restaurante.html" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li>
+              <a href="eventos.html" class="nav__link link__down">Eventos</a>
+            </li>
+
+            <li>
+              <a href="restaurante.html" class="nav__link link__down"
+                >Restaurantes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <main class="evento">
+      <div class="evento__contenedor-imagen">
+        <div class="evento__imagen-principal"></div>
+        <div class="evento__separador-svg">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path
+              d="M0,80 C300,140 1140,0 1440,100 L1440,120 L0,120 Z"
+              fill="#fdf7ef"
+            />
+          </svg>
+        </div>
+        <div class="evento__imagen-secundaria">
+          <img src="../media/events/perfil.jpg" alt="Casa Evento" />
+        </div>
+      </div>
+
+      <div class="evento__contenido">
+        <div class="evento__texto">
+          <h2 class="evento__titulo">El Sueño Dorado</h2>
+          <h1 class="evento__subtitulo">Eventos Inolvidables</h1>
+          <p class="evento__frase">Planeación Perfecta + Experiencias Únicas</p>
+        </div>
+      </div>
+
+      <section class="evento__iconos">
+        <div class="evento__iconos-wrapper">
+          <div class="evento__icono">
+            <img src="../media/events/madre.jpg" alt="Icono 1" />
+          </div>
+          <div class="evento__icono">
+            <img src="../media/events/padre.png" alt="Icono 2" />
+          </div>
+          <div class="evento__icono">
+            <img src="../media/events/amor.jpg" alt="Icono 3" />
+          </div>
+          <div class="evento__icono">
+            <img src="../media/events/navidad.png" alt="Icono 4" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="eventos__especiales">
+      <div class="eventos__especial eventos__especial--madre">
+        <div class="eventos__contenido">
+          <div class="eventos__texto">
+            <p>
+              Celebra el Día de la Madre en nuestro hotel con un desayuno
+              especial y actividades para toda la familia.
+            </p>
+            <p>
+              Desayuno buffet con opciones especiales para mamá, música en vivo
+              y actividades para niños.
+            </p>
+            <p>
+              <strong>Domingo 10 de mayo,<br />9:00 am - 12:00 pm</strong>
+            </p>
+            <button class="eventos__boton">No te lo pierdas</button>
+          </div>
+          <div class="evento__imagenes evento__imagenes--madre">
+            <img src="../media/events/dia-madre.webp" alt="Foto madre 1" />
+            <img src="../media/events/dia-madre2.jpeg" alt="Foto madre 2" />
+            <img src="../media/events/dia-madre3.webp" alt="Foto madre 3" />
+          </div>
+        </div>
+      </div>
+      <div class="eventos__especial eventos__especial--padre">
+        <div class="eventos__contenido">
+          <div class="eventos__imagenes--padre">
+            <img src="../media/events/dia-padre1.jpg" alt="Foto padre 1" />
+            <img src="../media/events/dia-padre2.webp" alt="Foto padre 2" />
+          </div>
+          <div class="eventos__texto" style="text-align: right">
+            <p>
+              Celebra el Día del Padre en nuestro hotel con un paquete especial
+              que incluye cena y actividades para toda la familia.
+            </p>
+            <p>
+              Cena buffet y barra libre con opciones especiales para papá,
+              música en vivo y actividades para niños.
+            </p>
+            <p>
+              <strong>Domingo 18 de junio,<br />6:00 pm - 10:00 pm</strong>
+            </p>
+            <button class="eventos__boton eventos__boton--claro">
+              No te lo pierdas
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="amor__amistad">
+      <h2 class="amor__titulo">Amor y Amistad</h2>
+      <div class="amor__tarjetas">
+        <div class="amor__tarjeta">
+          <div
+            class="amor__imagen"
+            style="background-image: url('../media/events/amor2.avif')"
+          ></div>
+          <div class="amor__icono">
+            <img src="../media/events/amor-icono.png" alt="Icono amor" />
+          </div>
+          <div class="amor__contenido">
+            <h3 class="amor__subtitulo">Amor en el aire</h3>
+            <p class="amor__descripcion">
+              Desayuno romántico y noche de estancia con champán incluido.
+            </p>
+          </div>
+        </div>
+        <div class="amor__tarjeta">
+          <div
+            class="amor__imagen"
+            style="background-image: url('../media/events/amistad.webp')"
+          ></div>
+          <div class="amor__icono">
+            <img src="../media/events/amistad-icono.png" alt="Icono amistad" />
+          </div>
+          <div class="amor__contenido">
+            <h3 class="amor__subtitulo">Amistad en acción</h3>
+            <p class="amor__descripcion">
+              Descuento en habitaciones compartidas y actividades en grupo.
+            </p>
+          </div>
+        </div>
+        <div class="amor__tarjeta">
+          <div
+            class="amor__imagen"
+            style="background-image: url('../media/events/familia.jpg')"
+          ></div>
+          <div class="amor__icono">
+            <img src="../media/events/familia-icono.webp" alt="Icono familia" />
+          </div>
+          <div class="amor__contenido">
+            <h3 class="amor__subtitulo">Amor en familia</h3>
+            <p class="amor__descripcion">
+              Paquete familiar con actividades para niños y descuentos en
+              habitaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="celebraciones" id="celebraciones">
+      <div class="celebraciones__wrapper">
+        <div
+          class="celebraciones__contenedor celebraciones__contenedor--hover-navidad"
+        >
+          <div class="celebraciones__col celebraciones__col--navidad">
+            <div class="celebraciones__text">
+              Navidad en nuestro hotel: un refugio de amor y alegria
+            </div>
+          </div>
+          <div class="celebraciones__col celebraciones__col--anonuevo">
+            <div class="celebraciones__text">
+              Bienvenido al Año Nuevo: Celebra con nosotros
+            </div>
+          </div>
+          <div class="celebraciones__panel celebraciones__panel--navidad">
+            <div
+              class="celebraciones__imagen"
+              style="background-image: url('../media/events/navidad2.jpg')"
+            >
+              <div class="celebraciones__overlay">
+                <h2>Celebración de Navidad</h2>
+                <p>
+                  Disfruta de una navidad inolvidable con nosotros: paquete
+                  especial con cena de Nochebuena, decoraciones navideñas y
+                  actividades para niños.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="celebraciones__panel celebraciones__panel--anonuevo">
+            <div
+              class="celebraciones__imagen"
+              style="background-image: url('../media/events/año-nuevo.jpg')"
+            >
+              <div class="celebraciones__overlay">
+                <h2>Fiesta de Año Nuevo</h2>
+                <p>
+                  Comienza el año nuevo con estilo: Paquete de Año Nuevo con
+                  cena de gala, champán y fuegos artificiales. ¡Reserva ahora y
+                  haz que tu celebracion sea inolvidable!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
+</html>

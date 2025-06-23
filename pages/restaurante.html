@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantes el Ensueño Dorado</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/restaurante.css" />
+    <script src="../scripts/restaurant.js" defer></script>
+    <script src="../scripts/index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="restaurante.html" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li>
+              <a href="eventos.html" class="nav__link link__down">Eventos</a>
+            </li>
+
+            <li>
+              <a href="restaurante.html" class="nav__link link__down"
+                >Restaurantes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+
+    <section class="slider-section">
+      <div class="slider-section__wrapper">
+        <div class="slider-section__slides">
+          <div class="slider-section__slide slider-section__slide--active">
+            <img
+              src="../media/restaurant/fondo.jpg"
+              alt="Slide 1"
+              class="slider-section__image"
+            />
+            <div class="slider-section__overlay">
+              <h1 class="slider-section__title">Bienvenido</h1>
+            </div>
+          </div>
+          <div class="slider-section__slide">
+            <img
+              src="../media/restaurant/fondo2.jpg"
+              alt="Slide 2"
+              class="slider-section__image"
+            />
+            <div class="slider-section__overlay">
+              <h1 class="slider-section__title">Bienvenido</h1>
+            </div>
+          </div>
+          <div class="slider-section__slide">
+            <img
+              src="../media/restaurant/fondo3.jpg"
+              alt="Slide 3"
+              class="slider-section__image"
+            />
+            <div class="slider-section__overlay">
+              <h1 class="slider-section__title">Bienvenido</h1>
+            </div>
+          </div>
+        </div>
+        <div class="slider-section__navigation">
+          <span class="slider-section__arrow slider-section__arrow--left"
+            >&#8592;</span
+          >
+          <div class="slider-section__dots">
+            <span
+              class="slider-section__dot slider-section__dot--active"
+            ></span>
+            <span class="slider-section__dot"></span>
+            <span class="slider-section__dot"></span>
+          </div>
+          <span class="slider-section__arrow slider-section__arrow--right"
+            >&#8594;</span
+          >
+        </div>
+      </div>
+      <div class="slider-section__content">
+        <h2 class="slider-section__subtitle">Restaurantes El Dorado</h2>
+        <p class="slider-section__text">
+          "Bienvenidos al lugar con mayor variedad de alimentos en el mercado
+          para goze de nuestros invitados, con alimentos provenientes del Mar,
+          Comidas Rapidas e Imporadas de Europa..."
+        </p>
+      </div>
+      <div class="gallery">
+        <div class="gallery__row">
+          <div class="gallery__group">
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/vaso1.png"
+                alt="Bebida 1"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+
+            <div class="gallery__card gallery__card--center">
+              <img
+                src="../media/restaurant/vaso2.png"
+                alt="Bebida 2"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay">
+                <h3 class="gallery__overlay-title">FOOD WAVES</h3>
+                <p class="gallery__overlay-text">
+                  "Te invitamos a probar las delicias del mar que cautivaron los
+                  paladares de nuestros invitados."
+                </p>
+                <button
+                  class="gallery__overlay-button"
+                  onclick="openMenuModal('restaurante1')"
+                >
+                  🍸 Menu
+                </button>
+              </div>
+            </div>
+
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/vaso3.png"
+                alt="Bebida 3"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__row">
+          <div class="gallery__group">
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/carne1.png"
+                alt="Bebida 1"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+
+            <div class="gallery__card gallery__card--center">
+              <img
+                src="../media/restaurant/carne2.png"
+                alt="Bebida 2"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay">
+                <h3 class="gallery__overlay-title">GRAPPLERS KING</h3>
+                <p class="gallery__overlay-text">
+                  "¿Que te querias morir por una sobredosis de calorias?
+                  Felicidades, llegaste al lugar indicado."
+                </p>
+                <button
+                  class="gallery__overlay-button"
+                  onclick="openMenuModal('restaurante3')"
+                >
+                  🍽️ Menu
+                </button>
+              </div>
+            </div>
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/carne3.png"
+                alt="Bebida 3"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__row">
+          <div class="gallery__group">
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/vino1.png"
+                alt="Bebida 1"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+            <div class="gallery__card gallery__card--center">
+              <img
+                src="../media/restaurant/vino2.png"
+                alt="Bebida 2"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay">
+                <h3 class="gallery__overlay-title">CAPELLO DI ROMA</h3>
+                <p class="gallery__overlay-text">
+                  "Llevamos comidas del Corazon de Italia de Roma a tu mesa para
+                  tu disfrute, BONGIORNO"
+                </p>
+                <button
+                  class="gallery__overlay-button"
+                  onclick="openMenuModal('restaurante2')"
+                >
+                  🍸 Menu
+                </button>
+              </div>
+            </div>
+            <div class="gallery__card">
+              <img
+                src="../media/restaurant/vino3.png"
+                alt="Bebida 3"
+                class="gallery__card-img"
+              />
+              <div class="gallery__overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-modal" id="menuModal">
+        <div class="menu-modal__content">
+          <button class="menu-modal__close" onclick="closeMenuModal()">
+            &times;
+          </button>
+          <div class="menu-modal__flip-container">
+            <div class="menu-modal__flipper" id="menuFlipper">
+              <!-- Las páginas de menú se insertarán con JS -->
+            </div>
+          </div>
+          <button
+            class="menu-modal__arrow menu-modal__arrow--left"
+            onclick="prevMenuPage()"
+          >
+            &#10094;
+          </button>
+          <button
+            class="menu-modal__arrow menu-modal__arrow--right"
+            onclick="nextMenuPage()"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="dish__section">
+      <h2 class="dish__title">Olives</h2>
+      <div class="dish__container">
+        <img
+          src="../media/restaurant/olives.webp"
+          alt="Bandeja de comida"
+          class="dish__image"
+        />
+
+        <div class="dish__info">
+          <img
+            src="../media/imgs/LOGO_HOTEL 4.png"
+            alt="Logo El Ensueño Dorado"
+            class="dish__logo"
+          />
+          <h3 class="dish__info-title">Buffet Gold</h3>
+          <p class="dish__info-description">
+            "Alimentos Especiales para Personas Especiales."
+          </p>
+          <a href="eventos.html"
+            ><button class="dish__button">🍽️ Menu</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
+</html>
