@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hotel el Ensueño Dorado, distinguido por su elegancia y gran alojamiento, reserva y disfruta de una gran experiencia."
+    />
+    <title>Hotel el Ensueño Dorado</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="#" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li><a href="#" class="nav__link link__down">Eventos</a></li>
+
+            <li><a href="#" class="nav__link link__down">Restaurantes</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+    <main class="empleados--main">
+      <article class="contiene_historias">
+        <section class="cuadros_empleados">
+          <div class="linea_horizontal"></div>
+          <div class="foto_empleado">
+            <img src="../media/imgs/Empleados/Juan David.jpeg" alt="" />
+          </div>
+          <div class="historia_empleado">
+            <h4>
+              Juan David López <br />
+              Estudiante de Administración de Empresas
+            </h4>
+            <p>
+              "Trabajar en El Ensueño Dorado ha sido una oportunidad para
+              desarrollar mis habilidades de liderazgo y organización. Desde el
+              primer día, he recibido el apoyo de mis compañeros y la confianza
+              de los directivos, lo que me ha permitido crecer y aprender cada
+              día. Recomiendo este hotel a todos los huéspedes que busquen un
+              ambiente cálido y profesional."
+            </p>
+          </div>
+        </section>
+
+        <section class="cuadros_empleados">
+          <div class="linea_horizontal"></div>
+          <div class="foto_empleado">
+            <img src="../media/imgs/Empleados/Laura.jpeg" alt="" />
+          </div>
+          <div class="historia_empleado">
+            <h4>
+              Laura Martínez<br />
+              Aspirante a Maestría en Turismo
+            </h4>
+            <p>
+              "Mi experiencia en El Ensueño Dorado ha sido excepcional. Cada día
+              disfruto del ambiente cordial y el compromiso que todos tenemos
+              para hacer sentir a los huéspedes como en casa. Además, la
+              ubicación privilegiada en el corazón de Barranquilla lo convierte
+              en el sitio ideal para explorar la ciudad con estilo y comodidad."
+            </p>
+          </div>
+        </section>
+
+        <section class="cuadros_empleados">
+          <div class="linea_horizontal"></div>
+          <div class="foto_empleado">
+            <img src="../media/imgs/Empleados/Alejandro.jpeg" alt="" />
+          </div>
+          <div class="historia_empleado">
+            <h4>
+              Alejandro Gutiérrez<br />
+              Estudiante de Gastronomía
+            </h4>
+            <p>
+              "Como parte del equipo culinario he podido experimentar la
+              verdadera pasión por la hospitalidad. Mis compañeros y los
+              directivos siempre han estado dispuestos a compartir sus
+              conocimientos y ayudarme a perfeccionar mis habilidades en la
+              cocina. Estoy seguro de que los huéspedes podrán saborear la
+              dedicación y el amor que ponemos en cada plato."
+            </p>
+          </div>
+        </section>
+
+        <section class="cuadros_empleados">
+          <div class="linea_horizontal"></div>
+          <div class="foto_empleado">
+            <img src="../media/imgs/Empleados/Andrés.jpeg" alt="" />
+          </div>
+          <div class="historia_empleado">
+            <h4>
+              Andrés Ramírez<br />
+              Aspirante a Doctorado en Ingeniería Ambiental
+            </h4>
+            <p>
+              "Trabajar en este hotel me ha permitido aprender sobre
+              sostenibilidad y prácticas responsables en la industria hotelera.
+              Los directivos siempre están abiertos a ideas nuevas y a la
+              innovación, esto me motiva a aportar soluciones que beneficien
+              tanto a los huéspedes como al medio ambiente.
+            </p>
+          </div>
+        </section>
+      </article>
+      <article>
+        <div class="descripcion_historias">
+          <div class="contiene_descripcion_h">
+            <p>
+              ¿Quieres comprobar que sus historias son reales? ¿¡Qué esperas!?
+              <br />
+              Obtén tu reservación y disfruta del mejor equipo hotelero del
+              atlántico a tu servicio
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
+</html>

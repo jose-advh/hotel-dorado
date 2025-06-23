@@ -1,190 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Ensueño Dorado - Habitaciones</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../scripts/index.js" defer></script>
   </head>
   <body>
     <header>
+      <a href="../index.html" class="header__logo-link">
         <img
           src="../media/imgs/LOGO_HOTEL 4.png"
           class="header__logo"
           alt="Logo del Ensueño Dorado"
         />
-        <nav class="header__nav">
-          <ul class="nav__lista">
-            <li><a href="../index.html" class="nav__link">Inicio</a></li>
-            <li><a href="#" class="nav__link">Historia</a></li>
-            <li><a href="./pages/habitaciones.html" class="nav__link">Habitaciones</a></li>
-            <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
-          </ul>
-  
-          <!-- Menú que aparece con hover -->
-          <ul class="nav__lista--none display-none" id="listaLugares">
-            <li><a href="#" class="nav__link">Restaurantes</a></li>
-            <hr />
-            <li><a href="#" class="nav__link">Eventos</a></li>
-            <hr />
-            <li><a href="#" class="nav__link">Salas</a></li>
-            <hr />
-          </ul>
-  
-          <nav class="menu--mobile">
-            <img
-              src="../media/icons/menu.svg"
-              class="nav__menu--icon"
-              alt=""
-              id="iconMenuMobile"
-            />
-  
-            <ul class="list__down list__down--left display-none">
-              <h2 class="list__title">Esenciales</h2>
-              <li><a href="#" class="nav__link link__down">Inicio</a></li>
-              <li><a href="#" class="nav__link link__down">Historia</a></li>
-              <li><a href="./pages/habitaciones.html" class="nav__link link__down">Habitaciones</a></li>
-            </ul>
-  
-            <ul class="list__down list__down--right display-none">
-              <h2 class="list__title">Lugares</h2>
-              <li><a href="#" class="nav__link link__down">Salas</a></li>
-              <li><a href="#" class="nav__link link__down">Eventos</a></li>
-  
-              <li><a href="#" class="nav__link link__down">Restaurantes</a></li>
-            </ul>
-          </nav>
-        </nav>
-      </header>
-      <div class="black-curtain" id="menuOverlay"></div>
-      <main class="rooms">
-          <section class="rooms__introduction">
-            <h2 class="rooms__title-p">Habitaciones</h2>
-            <p class="rooms__description-p"> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex rem aliquid autem hic et expedita a nisi deserunt labore fugit ad deleniti, fuga optio corporis facere praesentium neque minima!
-            </p>
-        </section>
-        <section class="filter__container">
-            <article class="filter__inputs">
-                <div class="filter__input--container">
-                    <label for="checkin">Check In</label>
-                    <input type="date" class="filter__input" id="checkin">
-                </div>
-                <div class="filter__input--container">
-                    <label for="checkout">Check Out</label>
-                    <input type="date" class="filter__input" id="checkin">
-                </div>
-                <div class="filter__input--container">
-                    <label for="adults">Adultos</label>
-                    <select type="number" class="filter__input" id="adults">
-                      <option value="0" disabled selected>Seleccione una opción</option>
-                      <option value="1">1 Adulto</option>
-                      <option value="2">2 Adultos</option>
-                      <option value="3">3 Adultos</option>
-                    </select>
-                </div>
-            </article>
-            <button type="button" class="filter__button">
-                <img src="../media/icons/bell.svg" alt="Camapana de ordenes"> 
-                <span>Ver Disponibilidad</span></button>
-        </section>
-        <section class="search__room">
-            <aside class="search__filter">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="search__map"
-              ></iframe>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
 
-              <h4>Filtrar Por:</h4>
-            </aside>
-            <section class="rooms__container">
-                <article class="room">
-                    <img src="../media/rooms/room_test.webp" alt="Imagen de la habitación" class="room__img">
-                    <section class="room__information">
-                        <h2 class="room_title">Habitacíon Premium</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
-                        <article class="room__buttons">
-                            <button class="neon-pulse">Reservar</button>
-                            <button type="button" class="room__button">Comodidades</button>
-                        </article>
-                    </section>
-                </article>
-                <article class="room">
-                    <img src="../media/rooms/room_test.webp" alt="Imagen de la habitación" class="room__img">
-                    <section class="room__information">
-                        <h2 class="room_title">Habitacíon Premium</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
-                        <article class="room__buttons">
-                          <button class="neon-pulse">Reservar</button>
-                            <button type="button" class="room__button">Comodidades</button>
-                        </article>
-                    </section>
-                </article>
-                <article class="room">
-                    <img src="../media/rooms/room_test.webp" alt="Imagen de la habitación" class="room__img">
-                    <section class="room__information">
-                        <h2 class="room_title">Habitacíon Premium</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum hic cumque sapiente adipisci nisi autem sunt reprehenderit, delectus voluptas, eveniet alias quasi laudantium ut! Consequatur nesciunt tempore debitis fuga nemo.</p>
-                        <article class="room__buttons">
-                          <button class="neon-pulse">Reservar</button>
-                            <button type="button" class="room__button">Comodidades</button>
-                        </article>
-                    </section>
-                </article>
-            </section>
-        </section>
-      </main>
-      <footer>
-        <section class="footer__content">
-          <article class="flex--col">
-            <h2 class="footer__subtitle">Contáctanos</h2>
-            <p class="footer__text">(605) 3100800</p>
-            <p class="footer__text">(+57) 318 366 1799</p>
-          </article>
-          <article class="flex--col">
-            <h2 class="footer__subtitle">Encuéntranos</h2>
-            <p class="footer__text">Cra 54 Calle 70-10.</p>
-            <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
-          </article>
-          <article class="flex--col">
-            <h2 class="footer__subtitle">Siguenos</h2>
-            <div class="flex">
-              <a href="#">
-                <img
-                  src="../media/icons/instagram.svg"
-                  class="footer__img"
-                  alt="Logotipo de Instagram"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="../media/icons/faceboock.svg"
-                  class="footer__img"
-                  alt="Logotipo de Facebook"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="../media/icons/twitter.svg"
-                  class="footer__img"
-                  alt="Logotipo de Twitter"
-                />
-              </a>
-            </div>
-          </article>
-        </section>
-        <article class="footer__img--content">
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="#" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="#" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
           <img
-            src="../media/imgs/LOGO_HOTEL 4.png"
-            class="footer__logo"
-            alt="Logo hotel El Ensueño Dorado"
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
           />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li><a href="#" class="nav__link link__down">Eventos</a></li>
+
+            <li><a href="#" class="nav__link link__down">Restaurantes</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+    <main class="rooms">
+      <section class="rooms__introduction">
+        <h2 class="rooms__title-p">Habitaciones</h2>
+        <p class="rooms__description-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex
+          rem aliquid autem hic et expedita a nisi deserunt labore fugit ad
+          deleniti, fuga optio corporis facere praesentium neque minima!
+        </p>
+      </section>
+      <section class="filter__container">
+        <article class="filter__inputs">
+          <div class="filter__input--container">
+            <label for="checkin">Check In</label>
+            <input type="date" class="filter__input" id="checkin" />
+          </div>
+          <div class="filter__input--container">
+            <label for="checkout">Check Out</label>
+            <input type="date" class="filter__input" id="checkin" />
+          </div>
+          <div class="filter__input--container">
+            <label for="adults">Adultos</label>
+            <select type="number" class="filter__input" id="adults">
+              <option value="0" disabled selected>Seleccione una opción</option>
+              <option value="1">1 Adulto</option>
+              <option value="2">2 Adultos</option>
+              <option value="3">3 Adultos</option>
+            </select>
+          </div>
         </article>
-      </footer>
-</body>
+        <button type="button" class="filter__button">
+          <img src="../media/icons/bell.svg" alt="Camapana de ordenes" />
+          <span>Ver Disponibilidad</span>
+        </button>
+      </section>
+      <section class="search__room">
+        <aside class="search__filter">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="search__map"
+          ></iframe>
+
+          <h4>Filtrar Por:</h4>
+        </aside>
+        <section class="rooms__container">
+          <article class="room">
+            <img
+              src="https://images.unsplash.com/photo-…deluxe-room?ixlib=rb‑1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Imagen de la habitación"
+              class="room__img"
+            />
+            <section class="room__information">
+              <h2 class="room_title">Habitación Moderna</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
+                delectus voluptas, eveniet alias quasi laudantium ut!
+                Consequatur nesciunt tempore debitis fuga nemo.
+              </p>
+              <article class="room__buttons">
+                <button class="neon-pulse">Reservar</button>
+                <button type="button" class="room__button">Comodidades</button>
+              </article>
+            </section>
+          </article>
+          <article class="room">
+            <img
+              src="https://thumbor.dreamstime.com/…/hotel-deluxe-room.jpg"
+              alt="Imagen de la habitación"
+              class="room__img"
+            />
+            <section class="room__information">
+              <h2 class="room_title">Habitación Confortable</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
+                delectus voluptas, eveniet alias quasi laudantium ut!
+                Consequatur nesciunt tempore debitis fuga nemo.
+              </p>
+              <article class="room__buttons">
+                <button class="neon-pulse">Reservar</button>
+                <button type="button" class="room__button">Comodidades</button>
+              </article>
+            </section>
+          </article>
+          <article class="room">
+            <img
+              src="https://francismarionhotel.com/path/to/king-deluxe.jpg"
+              alt="Imagen de la habitación"
+              class="room__img"
+            />
+            <section class="room__information">
+              <h2 class="room_title">Habitación Clásica</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
+                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
+                delectus voluptas, eveniet alias quasi laudantium ut!
+                Consequatur nesciunt tempore debitis fuga nemo.
+              </p>
+              <article class="room__buttons">
+                <button class="neon-pulse">Reservar</button>
+                <button type="button" class="room__button">Comodidades</button>
+              </article>
+            </section>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+  </body>
 </html>
