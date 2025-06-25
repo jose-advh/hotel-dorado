@@ -6,6 +6,7 @@
     <title>El Ensueño Dorado - Habitaciones</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../scripts/index.js" defer></script>
+    <script src="../scripts/rooms.mjs" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -133,67 +134,12 @@
 
           <h4>Filtrar Por:</h4>
         </aside>
-        <section class="rooms__container">
-          <article class="room">
-            <img
-              src="https://images.unsplash.com/photo-…deluxe-room?ixlib=rb‑1.2.1&auto=format&fit=crop&w=800&q=80"
-              alt="Imagen de la habitación"
-              class="room__img"
-            />
-            <section class="room__information">
-              <h2 class="room_title">Habitación Moderna</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
-                delectus voluptas, eveniet alias quasi laudantium ut!
-                Consequatur nesciunt tempore debitis fuga nemo.
-              </p>
-              <article class="room__buttons">
-                <button class="neon-pulse">Reservar</button>
-                <button type="button" class="room__button">Comodidades</button>
-              </article>
-            </section>
-          </article>
-          <article class="room">
-            <img
-              src="https://thumbor.dreamstime.com/…/hotel-deluxe-room.jpg"
-              alt="Imagen de la habitación"
-              class="room__img"
-            />
-            <section class="room__information">
-              <h2 class="room_title">Habitación Confortable</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
-                delectus voluptas, eveniet alias quasi laudantium ut!
-                Consequatur nesciunt tempore debitis fuga nemo.
-              </p>
-              <article class="room__buttons">
-                <button class="neon-pulse">Reservar</button>
-                <button type="button" class="room__button">Comodidades</button>
-              </article>
-            </section>
-          </article>
-          <article class="room">
-            <img
-              src="https://francismarionhotel.com/path/to/king-deluxe.jpg"
-              alt="Imagen de la habitación"
-              class="room__img"
-            />
-            <section class="room__information">
-              <h2 class="room_title">Habitación Clásica</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                hic cumque sapiente adipisci nisi autem sunt reprehenderit,
-                delectus voluptas, eveniet alias quasi laudantium ut!
-                Consequatur nesciunt tempore debitis fuga nemo.
-              </p>
-              <article class="room__buttons">
-                <button class="neon-pulse">Reservar</button>
-                <button type="button" class="room__button">Comodidades</button>
-              </article>
-            </section>
-          </article>
+        <section class="rooms__container" id="contenedorHabitaciones">
+          <!-- Habitaciones Javascript -->
+          <dialog id="modalComodidades">
+            <p id="contenidoModal">Hello world</p>
+            <button onclick="cerrarModal()">Cerrar</button>
+          </dialog>
         </section>
       </section>
     </main>
