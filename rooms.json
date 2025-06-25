@@ -1,6 +1,6 @@
 [
   {
-    "ruta_img": "../media/rooms/Familiar1.jpg",
+    "ruta_img": "../media/rooms/Familiar1.webp",
     "name": "Habitacion Familar",
     "description": "Un espacio perfecto para disfrutar en familia, con 2 camas dobles, ambiente tranquilo y todo lo necesario para descansar cómodamente.",
     "tags": [
@@ -30,7 +30,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Familiar2.jpg",
+    "ruta_img": "../media/rooms/Familiar2.webp",
     "name": "Habitacion Familar",
     "description": "Ideal para familias pequeñas que buscan comodidad y cercanía. Dispone de 2 camas dobles, TV, baño privado y ventilación natural.",
     "tags": [
@@ -60,7 +60,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Familiar3.jpg",
+    "ruta_img": "../media/rooms/Familiar3.webp",
     "name": "Habitacion Familar",
     "description": "Diseñada para compartir, esta habitación familiar ofrece amplitud, buena iluminación y camas dobles para un descanso pleno.",
     "tags": [
@@ -90,7 +90,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Familiar4.jpg",
+    "ruta_img": "../media/rooms/Familiar4.webp",
     "name": "Habitacion Familar",
     "description": "Acogedora y funcional, pensada para grupos familiares que desean una estadía relajante con espacio suficiente.",
     "tags": [
@@ -120,7 +120,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Familiar5.jpg",
+    "ruta_img": "../media/rooms/Familiar5.webp",
     "name": "Habitacion Familar",
     "description": "Perfecta para unas vacaciones en familia. Incluye 2 camas dobles, escritorio y todo lo necesario para una experiencia confortable.",
     "tags": [
@@ -150,7 +150,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico1.jpg",
+    "ruta_img": "../media/rooms/Romantico1.webp",
     "name": "Habitacion Romántica",
     "description": "Un rincón íntimo con decoración suave, ideal para aniversarios o escapadas en pareja. Incluye cama king y detalles decorativos.",
     "tags": [
@@ -176,7 +176,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico2.jpg",
+    "ruta_img": "../media/rooms/Romantico2.webp",
     "name": "Habitacion Romántica",
     "description": "Ambiente cálido y relajante, diseñado para fortalecer la conexión entre parejas. Iluminación ambiental y acabados elegantes.",
     "tags": [
@@ -202,7 +202,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico3.jpg",
+    "ruta_img": "../media/rooms/Romantico3.webp",
     "name": "Habitacion Romántica",
     "description": "Disfruta de una experiencia romántica con cama amplia, pétalos decorativos y una atmósfera pensada para el amor.",
     "tags": [
@@ -229,7 +229,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico4.jpg",
+    "ruta_img": "../media/rooms/Romantico4.webp",
     "name": "Habitacion Romántica",
     "description": "Ideal para sorprender a tu pareja. Espacio acogedor, cama grande y decoración con encanto.",
     "tags": [
@@ -247,7 +247,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico5.jpg",
+    "ruta_img": "../media/rooms/Romantico5.webp",
     "name": "Habitacion Romántica",
     "description": "Perfecta para una noche especial. Equipamiento moderno, privacidad y ambiente armonioso.",
     "tags": [
@@ -265,7 +265,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Romantico6.jpg",
+    "ruta_img": "../media/rooms/Romantico6.webp",
     "name": "Habitacion Romántica",
     "description": "Una habitación para reconectar, con luces tenues, espacio cálido y todo listo para una velada inolvidable.",
     "tags": [
@@ -283,7 +283,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon1.jpg",
+    "ruta_img": "../media/rooms/Balcon1.webp",
     "name": "Habitacion con Balcón",
     "description": "Relájate al aire libre desde tu balcón privado, con vista a la ciudad y espacio para disfrutar una bebida tranquila.",
     "tags": [
@@ -312,7 +312,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon2.jpg",
+    "ruta_img": "../media/rooms/Balcon2.webp",
     "name": "Habitacion con Balcón",
     "description": "Ambiente iluminado, con salida directa al balcón. Ideal para leer, meditar o simplemente contemplar el entorno.",
     "tags": [
@@ -341,7 +341,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon3.jpg",
+    "ruta_img": "../media/rooms/Balcon3.webp",
     "name": "Habitacion con Balcón",
     "description": "Vista privilegiada y excelente ventilación. El balcón añade un toque de libertad a tu estancia.",
     "tags": [
@@ -370,7 +370,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon4.jpg",
+    "ruta_img": "../media/rooms/Balcon4.webp",
     "name": "Habitacion con Balcón",
     "description": "Cómoda y funcional, con un rincón exterior para tomar aire fresco sin salir de la habitación.",
     "tags": [
@@ -390,7 +390,7 @@
     "comodidades": ["2 Habitaciones", "Wifi Gratis", "Piscina Incluida"]
   },
   {
-    "ruta_img": "../media/rooms/Balcon5.jpg",
+    "ruta_img": "../media/rooms/Balcon5.webp",
     "name": "Habitacion con Balcón",
     "description": "Una excelente opción para quienes valoran la luz natural y el espacio al aire libre.",
     "tags": [
@@ -419,7 +419,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon6.jpg",
+    "ruta_img": "../media/rooms/Balcon6.webp",
     "name": "Habitacion con Balcón",
     "description": "Decoración moderna, interiores cálidos y balcón privado para tu descanso personal.",
     "tags": [
@@ -448,7 +448,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon7.jpg",
+    "ruta_img": "../media/rooms/Balcon7.webp",
     "name": "Habitacion con Balcón",
     "description": "Conexión perfecta entre el interior y el exterior, ideal para disfrutar atardeceres.",
     "tags": [
@@ -477,7 +477,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon8.jpg",
+    "ruta_img": "../media/rooms/Balcon8.webp",
     "name": "Habitacion con Balcón",
     "description": "Tu propio espacio abierto con mesa y sillas, perfecto para un desayuno tranquilo.",
     "tags": [
@@ -506,7 +506,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon9.jpg",
+    "ruta_img": "../media/rooms/Balcon9.webp",
     "name": "Habitacion con Balcón",
     "description": "Disfruta de una experiencia más libre con vista desde el segundo piso y acceso a aire fresco.",
     "tags": [
@@ -535,7 +535,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Balcon10.jpg",
+    "ruta_img": "../media/rooms/Balcon10.webp",
     "name": "Habitacion con Balcón",
     "description": "Espacio versátil y moderno, con zona de balcón para mayor confort y estilo.",
     "tags": [
@@ -564,7 +564,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Cine1.jpg",
+    "ruta_img": "../media/rooms/Cine1.webp",
     "name": "Habitacion tipo Cine",
     "description": "Transforma tu noche en una función privada. Incluye pantalla grande y sonido envolvente.",
     "tags": [
@@ -593,7 +593,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Cine2.jpg",
+    "ruta_img": "../media/rooms/Cine2.webp",
     "name": "Habitacion tipo Cine",
     "description": "Perfecta para cinéfilos. Disfruta películas como en casa, pero con estilo hotelero.",
     "tags": [
@@ -622,7 +622,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Cine3.jpg",
+    "ruta_img": "../media/rooms/Cine3.webp",
     "name": "Habitacion tipo Cine",
     "description": "Relájate en sillones cómodos frente a una pantalla de alta definición, sin salir del cuarto.",
     "tags": [
@@ -651,7 +651,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala1.jpg",
+    "ruta_img": "../media/rooms/Sala1.webp",
     "name": "Habitacion con Sala",
     "description": "Zona de descanso y sala integrada, ideal para reuniones o estancias largas.",
     "tags": [
@@ -681,7 +681,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala2.jpg",
+    "ruta_img": "../media/rooms/Sala2.webp",
     "name": "Habitacion con Sala",
     "description": "Confort y funcionalidad en un solo lugar. Sala con sofás y espacio para relajarse o trabajar.",
     "tags": [
@@ -711,7 +711,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala3.jpg",
+    "ruta_img": "../media/rooms/Sala3.webp",
     "name": "Habitacion con Sala",
     "description": "Perfecta para quienes buscan amplitud y privacidad, con área social incluida.",
     "tags": [
@@ -741,7 +741,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala4.jpg",
+    "ruta_img": "../media/rooms/Sala4.webp",
     "name": "Habitacion con Sala",
     "description": "Sala y dormitorio conectados con diseño moderno y distribución eficiente.",
     "tags": [
@@ -771,7 +771,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala5.jpg",
+    "ruta_img": "../media/rooms/Sala5.webp",
     "name": "Habitacion con Sala",
     "description": "Disfruta como en casa: dormitorio amplio y sala acogedora para charlas o lectura.",
     "tags": [
@@ -801,7 +801,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Sala6.jpg",
+    "ruta_img": "../media/rooms/Sala6.webp",
     "name": "Habitacion con Sala",
     "description": "Espacio exclusivo con zona de estar, ideal para viajes de negocios o familia.",
     "tags": [
@@ -831,7 +831,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Familiar1.jpg",
+    "ruta_img": "../media/rooms/Dorado/Familiar1.webp",
     "name": "Habitacion Dorado - Familiar",
     "description": "Nuestra joya exclusiva: habitación amplia con una cama doble, sala privada y detalles de lujo pensados para ti y tu familia.",
     "tags": ["barato", "comodo", "elegante"],
@@ -848,7 +848,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Familiar2.jpg",
+    "ruta_img": "../media/rooms/Dorado/Familiar2.webp",
     "name": "Habitacion Dorado - Familiar",
     "description": "Una experiencia premium. Sala y dormitorio integrados con diseño elegante y atención personalizada.",
     "tags": ["barato", "comodo", "elegante"],
@@ -865,7 +865,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Familiar3.jpg",
+    "ruta_img": "../media/rooms/Dorado/Familiar3.webp",
     "name": "Habitacion Dorado - Familiar",
     "description": "Familiar, sofisticada y espaciosa. Todo el confort de una suite con sala propia y toques dorados que elevan tu estadía.",
     "tags": ["barato", "comodo", "elegante"],
@@ -882,7 +882,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Familiar4.jpg",
+    "ruta_img": "../media/rooms/Dorado/Familiar4.webp",
     "name": "Habitacion Dorado - Familiar",
     "description": "Diseñada para quienes buscan lujo y calidez familiar en un solo espacio. Esta habitación ofrece dos camas dobles, una elegante sala privada y acabados de primera categoría. Ideal para una estancia memorable con los tuyos, en un entorno sofisticado y acogedor.",
     "tags": ["barato", "comodo", "elegante"],
@@ -898,7 +898,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Familiar5.jpg",
+    "ruta_img": "../media/rooms/Dorado/Familiar5.webp",
     "name": "Habitacion Dorado - Familiar",
     "description": "Una combinación perfecta de comodidad familiar y estilo refinado. Con una amplia sala, detalles dorados, y mobiliario premium, esta habitación brinda el equilibrio ideal entre descanso, convivencia y elegancia.",
     "tags": ["barato", "comodo", "elegante"],
@@ -915,7 +915,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Sala1.jpg",
+    "ruta_img": "../media/rooms/Dorado/Sala1.webp",
     "name": "Habitacion Dorado - Sala",
     "description": "Experimenta la elegancia en su máxima expresión con una sala completamente equipada, perfecta para descansar o trabajar con estilo. Su diseño moderno y sus amplios espacios la convierten en la opción ideal para quienes desean lujo sin renunciar a la funcionalidad.",
     "tags": ["barato", "comodo", "elegante"],
@@ -932,7 +932,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Sala2.jpg",
+    "ruta_img": "../media/rooms/Dorado/Sala2.webp",
     "name": "Habitacion Dorado - Sala",
     "description": "Diseñada para el huésped que busca más que un lugar para dormir. Esta habitación ofrece una espaciosa sala con mobiliario exclusivo, iluminación sofisticada y detalles dorados que hacen de cada momento una experiencia única.",
     "tags": ["barato", "comodo", "elegante"],
@@ -948,7 +948,7 @@
   },
 
   {
-    "ruta_img": "../media/rooms/Dorado/Sala3.jpg",
+    "ruta_img": "../media/rooms/Dorado/Sala3.webp",
     "name": "Habitacion Dorado - Sala",
     "description": "Una propuesta de alto nivel: sala privada tipo lounge, decoración sobria y elegante, y todos los servicios necesarios para una estadía placentera, ya sea en plan de negocios o descanso. Comodidad superior con el sello distintivo de nuestra categoría Dorado.",
     "tags": ["barato", "comodo", "elegante"],
