@@ -1024,6 +1024,23 @@ button {
     width: 90%;
     margin: auto;
   }
+
+  .modal__comodidades {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90%;
+    left: 0;
+    right: 0;
+  }
+
+  .modal__lista {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 90%;
+    flex-direction: column;
+  }
 }
 
 /* Sección de historias de empleados */
@@ -1990,6 +2007,19 @@ button {
 }
 
 /* Menu */
+
+.menu-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
 
 .menu-modal__content {
   position: relative;
