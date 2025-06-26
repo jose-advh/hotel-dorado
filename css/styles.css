@@ -431,7 +431,7 @@ footer {
 
 .services {
   background-color: var(--color-terciario);
-  background-image: url(../media/backgrounds/cartographer.webp);
+  background-image: url(../media/backgrounds/cartographer.png);
   background-attachment: fixed;
   padding: 4rem 2rem;
   text-align: center;
