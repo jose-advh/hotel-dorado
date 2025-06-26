@@ -27,6 +27,9 @@
           <li>
             <a href="habitaciones.html" class="nav__link">Habitaciones</a>
           </li>
+          <li>
+            <a href="creditos.html" class="nav__link">Créditos</a>
+          </li>
           <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
         </ul>
 
@@ -67,6 +70,9 @@
               <a href="sobre_nosotros.html" class="nav__link link__down"
                 >Sobre Nosotros</a
               >
+            </li>
+            <li>
+              <a href="creditos.html" class="nav__link link__down">Créditos</a>
             </li>
           </ul>
 
@@ -123,7 +129,7 @@
         </button>
       </section>
       <section class="search__room">
-        <aside class="search__filter">
+        <aside class="search__filter" id="filtroHabitaciones">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.465115341576!2d-74.81913802555425!3d11.003687554961942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da8620cf8b3%3A0x76177cd1deff17c6!2sHotel%20Dorado%20Plaza%20Alto%20Prado!5e0!3m2!1ses!2sco!4v1750174279709!5m2!1ses!2sco"
             style="border: 0"
@@ -134,7 +140,58 @@
           ></iframe>
 
           <h4>Filtrar Por:</h4>
+          <label
+            ><input
+              type="checkbox"
+              class="filtro-habitacion"
+              value="Habitacion Familar"
+            />
+            Habitacion Familiar</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="filtro-habitacion"
+              value="Habitacion Romántica"
+            />
+            Habitacion Romántica</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="filtro-habitacion"
+              value="Habitacion Dorado - Familiar"
+            />
+            Habitacion Dorado - Familiar</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="filtro-habitacion"
+              value="Habitacion con Balcón"
+            />
+            Habitacion con Balcón</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              class="filtro-habitacion"
+              value="Habitacion con Sala"
+            />
+            Habitacion con Sala</label
+          >
         </aside>
+        <a href="#filtroHabitaciones">
+          <img
+            src="../media/icons/filter.svg"
+            alt="Filtrar habitaciones"
+            class="filter__bottom display-none"
+          />
+        </a>
         <article class="modal__comodidades" id="modal-comodidades">
           <span id="cerrar-modal" class="modal__cerrar">&times;</span>
 

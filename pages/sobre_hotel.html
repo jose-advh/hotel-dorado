@@ -13,70 +13,170 @@
   </head>
   <body>
     <header>
-      <img
-        src="../media/imgs/LOGO_HOTEL 4.png"
-        class="header__logo"
-        alt="Logo del Ensueño Dorado"
-      />
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
       <nav class="header__nav">
         <ul class="nav__lista">
           <li><a href="../index.html" class="nav__link">Inicio</a></li>
-          <li><a href="./historia_empleados.html" class="nav__link">Historia</a></li>
-          <li><a href="#" class="nav__link">Habitaciones</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li>
+            <a href="creditos.html" class="nav__link">Créditos</a>
+          </li>
           <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
         </ul>
 
         <!-- Menú que aparece con hover -->
         <ul class="nav__lista--none display-none" id="listaLugares">
-          <li><a href="#" class="nav__link">Restaurantes</a></li>
+          <li><a href="restaurante.html" class="nav__link">Restaurantes</a></li>
           <hr />
-          <li><a href="#" class="nav__link">Eventos</a></li>
+          <li><a href="eventos.html" class="nav__link">Eventos</a></li>
           <hr />
-          <li><a href="#" class="nav__link">Salas</a></li>
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
           <hr />
         </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="creditos.html" class="nav__link link__down">Créditos</a>
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li>
+              <a href="eventos.html" class="nav__link link__down">Eventos</a>
+            </li>
+
+            <li>
+              <a href="restaurante.html" class="nav__link link__down"
+                >Restaurantes</a
+              >
+            </li>
+          </ul>
+        </nav>
       </nav>
     </header>
     <main class="main_sobre_hotel">
-        <article class="contenedor_total_sb_ht">
-            <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
-                <div class="descripcion_sb_ht">
-                    <h1>¿Quiénes somos?</h1>
-                    <p>
-
-El Ensueño Dorado, fue fundado por un equipo de ocho soñadores que con mucho empeño sumamos nuestras pasiones y conocimientos para crear un hotel único y acogedor en el centro de Barranquilla. Cada uno de nosotros tiene talentos únicos y complementarios. Gracias a esta diversidad, logramos fusionar creatividad, excelencia y calidez en un solo lugar.
-Tras seis años de esfuerzo, aprendizaje y compromiso, alcanzamos los objetivos que nos propusimos y nos hemos consolidado como un referente de calidad y hospitalidad en el Atlántico. Hoy, El Ensueño Dorado es sinónimo de experiencias memorables, atención personalizada y un espacio donde cada detalle ha sido pensado para brindarte momentos de descanso y placer. Aquí, nuestros huéspedes no solo encuentran un lugar para quedarse, sino un verdadero hogar lejos de casa.
-                    </p>
-                </div>
-                  <div class="imagen_sb_ht">
-                  <img src="../media/imgs/Imagen 1.webp" alt="" class="imagen_sb_int">
-                </div>
-            </section>
-            <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
-              <div class="descripcion_sb_ht">
-                <h1>Misión</h1>
-                <p>
-                  En El Ensueño Dorado, nuestra misión es brindar a nuestros huéspedes un espacio donde puedan sentirse tan acogidos y cómodos como en la casa de sus amigos, combinando la calidez y familiaridad con la elegancia y sofisticación de un palacio de realeza. Nos esforzamos por crear un entorno en el que la modernidad y el diseño impactante se integren armoniosamente con espacios funcionales y cómodos, pensados para satisfacer tanto las necesidades laborales como los momentos de descanso y esparcimiento. Nos comprometemos a ofrecer un servicio excepcional, garantizando a cada visitante una experiencia única, memorable y profundamente gratificante.</p>
-              </div>
-              <div class="imagen_sb_ht">
-                <img src="../media/imgs/Imagen 2.webp" alt="" class="imagen_sb_int">
-              </div>
-          </section>
-          <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
-            <div class="descripcion_sb_ht">
-              <h1>Visión</h1>
-              <p>En El Ensueño Dorado, soñamos con que para el año 2027 seamos un hotel de referencia en toda la costa Caribe colombiana, reconocidos por nuestra hospitalidad, nuestra excelencia arquitectónica y por el ambiente acogedor que nos distingue. Queremos expandir nuestras instalaciones y abrir nuevas sedes, manteniendo viva la esencia de nuestra marca: un espacio donde el confort y la belleza se combinan para crear experiencias únicas y memorables.
-                Pero no queremos que este sueño sea solo nuestro. Invitamos a nuestros huéspedes a ser parte de este viaje, sumándose a una cultura de conciencia ambiental y cuidado responsable de los recursos.
-                Juntos podemos construir un verdadero hogar en armonía con la naturaleza y con la comunidad que nos rodea.</p>
-            </div>
-            <div class="imagen_sb_ht">
-              <img src="../media/imgs/Imagen 3.webp" alt="" class="imagen_sb_int">
-            </div>
+      <article class="contenedor_total_sb_ht">
+        <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
+          <div class="descripcion_sb_ht">
+            <h1>¿Quiénes somos?</h1>
+            <p>
+              El Ensueño Dorado, fue fundado por un equipo de ocho soñadores que
+              con mucho empeño sumamos nuestras pasiones y conocimientos para
+              crear un hotel único y acogedor en el centro de Barranquilla. Cada
+              uno de nosotros tiene talentos únicos y complementarios. Gracias a
+              esta diversidad, logramos fusionar creatividad, excelencia y
+              calidez en un solo lugar. Tras seis años de esfuerzo, aprendizaje
+              y compromiso, alcanzamos los objetivos que nos propusimos y nos
+              hemos consolidado como un referente de calidad y hospitalidad en
+              el Atlántico. Hoy, El Ensueño Dorado es sinónimo de experiencias
+              memorables, atención personalizada y un espacio donde cada detalle
+              ha sido pensado para brindarte momentos de descanso y placer.
+              Aquí, nuestros huéspedes no solo encuentran un lugar para
+              quedarse, sino un verdadero hogar lejos de casa.
+            </p>
+          </div>
+          <div class="imagen_sb_ht">
+            <img
+              src="../media/imgs/Imagen 1.webp"
+              alt=""
+              class="imagen_sb_int"
+            />
+          </div>
         </section>
-
-
-
-        </article>
+        <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
+          <div class="descripcion_sb_ht">
+            <h1>Misión</h1>
+            <p>
+              En El Ensueño Dorado, nuestra misión es brindar a nuestros
+              huéspedes un espacio donde puedan sentirse tan acogidos y cómodos
+              como en la casa de sus amigos, combinando la calidez y
+              familiaridad con la elegancia y sofisticación de un palacio de
+              realeza. Nos esforzamos por crear un entorno en el que la
+              modernidad y el diseño impactante se integren armoniosamente con
+              espacios funcionales y cómodos, pensados para satisfacer tanto las
+              necesidades laborales como los momentos de descanso y
+              esparcimiento. Nos comprometemos a ofrecer un servicio
+              excepcional, garantizando a cada visitante una experiencia única,
+              memorable y profundamente gratificante.
+            </p>
+          </div>
+          <div class="imagen_sb_ht">
+            <img
+              src="../media/imgs/Imagen 2.webp"
+              alt=""
+              class="imagen_sb_int"
+            />
+          </div>
+        </section>
+        <section class="caja_sb_ht sombra_sb_ht imagen_centrada">
+          <div class="descripcion_sb_ht">
+            <h1>Visión</h1>
+            <p>
+              En El Ensueño Dorado, soñamos con que para el año 2027 seamos un
+              hotel de referencia en toda la costa Caribe colombiana,
+              reconocidos por nuestra hospitalidad, nuestra excelencia
+              arquitectónica y por el ambiente acogedor que nos distingue.
+              Queremos expandir nuestras instalaciones y abrir nuevas sedes,
+              manteniendo viva la esencia de nuestra marca: un espacio donde el
+              confort y la belleza se combinan para crear experiencias únicas y
+              memorables. Pero no queremos que este sueño sea solo nuestro.
+              Invitamos a nuestros huéspedes a ser parte de este viaje,
+              sumándose a una cultura de conciencia ambiental y cuidado
+              responsable de los recursos. Juntos podemos construir un verdadero
+              hogar en armonía con la naturaleza y con la comunidad que nos
+              rodea.
+            </p>
+          </div>
+          <div class="imagen_sb_ht">
+            <img
+              src="../media/imgs/Imagen 3.webp"
+              alt=""
+              class="imagen_sb_int"
+            />
+          </div>
+        </section>
+      </article>
     </main>
     <footer>
       <section class="footer__content">
@@ -125,6 +225,5 @@ Tras seis años de esfuerzo, aprendizaje y compromiso, alcanzamos los objetivos 
         />
       </article>
     </footer>
-</body>
-
+  </body>
 </html>

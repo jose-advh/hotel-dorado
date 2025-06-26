@@ -4,30 +4,49 @@ const contenedorHabitaciones = document.getElementById(
 const modal = document.getElementById("modal-comodidades");
 const cerrarModal = document.getElementById("cerrar-modal");
 const listaComodidades = document.getElementById("lista-comodidades");
+const checkboxes = document.querySelectorAll(".filtro-habitacion");
+const botonFiltro = document.querySelector(".filter__bottom");
 
 let habitaciones = [];
 
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  const esMovil = window.innerWidth <= 768;
+
+  const limite = esMovil ? window.innerHeight * 1.8 : window.innerHeight * 1.6;
+
+  if (scrollY > limite) {
+    botonFiltro.classList.remove("display-none");
+  } else {
+    botonFiltro.classList.add("display-none");
+  }
+});
+
 // Cargar Habitaciones
-async function cargarHabitaciones() {
+async function cargarHabitaciones(nombresSeleccionados = []) {
   try {
     const response = await fetch("../rooms.json");
 
     if (!response.ok) {
-      throw new Error(
-        `Hubo un error al cargar las habitaciones. ${response.status}`
-      );
+      throw new Error(`Error al cargar las habitaciones. ${response.status}`);
     }
 
     habitaciones = await response.json();
+    contenedorHabitaciones.innerHTML = "";
 
-    habitaciones.forEach((room, index) => {
+    // Filtrado si hay nombres seleccionados
+    const habitacionesFiltradas =
+      nombresSeleccionados.length === 0
+        ? habitaciones
+        : habitaciones.filter((room) =>
+            nombresSeleccionados.includes(room.name)
+          );
+
+    habitacionesFiltradas.forEach((room, index) => {
       contenedorHabitaciones.innerHTML += `
         <article class="room">
-          <img
-            src="${room.ruta_img}"
-            alt="Imagen de la habitación"
-            class="room__img"
-          />
+          <img src="${room.ruta_img}" alt="Imagen de la habitación" class="room__img" />
           <section class="room__information">
             <h2 class="room_title">${room.name}</h2>
             <p>${room.description}</p>
@@ -64,6 +83,18 @@ contenedorHabitaciones.addEventListener("click", (e) => {
 
 cerrarModal.addEventListener("click", () => {
   modal.style.display = "none";
+});
+
+// Acá checkboxes y recargar habitaciones
+
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    const seleccionados = Array.from(checkboxes)
+      .filter((cb) => cb.checked)
+      .map((cb) => cb.value);
+
+    cargarHabitaciones(seleccionados);
+  });
 });
 
 // Cargar habitaciones al iniciar

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creditos desarrolladores</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/creditos.css" />
+    <script src="../scripts/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="habitaciones.html" class="nav__link">Habitaciones</a>
+          </li>
+          <li>
+            <a href="creditos.html" class="nav__link">Créditos</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="restaurante.html" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="habitaciones.html" class="nav__link link__down"
+                >Habitaciones</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="creditos.html" class="nav__link link__down">Créditos</a>
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li>
+              <a href="eventos.html" class="nav__link link__down">Eventos</a>
+            </li>
+
+            <li>
+              <a href="restaurante.html" class="nav__link link__down"
+                >Restaurantes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+
+    <main class="integrantes">
+      <section class="integrantes__contenedor">
+        <div class="integrantes__info" id="info-area">
+          <!-- contenido dinámico del texto -->
+        </div>
+        <div class="integrantes__card" id="card-area">
+          <!-- tarjeta con imagen y datos -->
+        </div>
+      </section>
+    </main>
+
+    <div class="integrantes__controles">
+      <button id="btn-prev" class="integrantes__flecha">&#10094;</button>
+      <div class="integrantes__indicadores" id="indicadores"></div>
+      <button id="btn-next" class="integrantes__flecha">&#10095;</button>
+    </div>
+
+    <footer>
+      <section class="footer__content">
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Contáctanos</h2>
+          <p class="footer__text">(605) 3100800</p>
+          <p class="footer__text">(+57) 318 366 1799</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Encuéntranos</h2>
+          <p class="footer__text">Cra 54 Calle 70-10.</p>
+          <p class="footer__text">Barranquilla, Atlántico, Colombia.</p>
+        </article>
+        <article class="flex--col">
+          <h2 class="footer__subtitle">Siguenos</h2>
+          <div class="flex">
+            <a href="#">
+              <img
+                src="../media/icons/instagram.svg"
+                class="footer__img"
+                alt="Logotipo de Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/faceboock.svg"
+                class="footer__img"
+                alt="Logotipo de Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../media/icons/twitter.svg"
+                class="footer__img"
+                alt="Logotipo de Twitter"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+      <article class="footer__img--content">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="footer__logo"
+          alt="Logo hotel El Ensueño Dorado"
+        />
+      </article>
+    </footer>
+
+    <script>
+      const integrantes = [
+        {
+          nombre: "Leonar Josue Madera Solano",
+          ocupacion: "Estudiante de Sistemas Informaticos",
+          descripcion:
+            "Estudiar informática es como ver una serie sin subtítulos… al principio no entiendes nada, pero luego te envicias.",
+          imagen: "../media/integrantes/leonar.webp",
+        },
+        {
+          nombre: "Jose Miguel Barcelo de la Rosa",
+          ocupacion: "Estudiante de Sistemas Informaticos",
+          descripcion: "Sin Wi-Fi no soy persona, solo una carcasa con hambre.",
+          imagen: "../media/integrantes/barcelo.webp",
+        },
+        {
+          nombre: "Cesar Stiven Polo Caceres",
+          ocupacion: "Estudiante de Sistemas Informaticos",
+          descripcion:
+            "Programar es como escribir un libro… excepto que si te olvidas una coma, todo explota.",
+          imagen: "../media/integrantes/cesar.webp",
+        },
+        {
+          nombre: "Jose Armando Diaz Hernandez",
+          ocupacion: "Estudiante de Sistemas Informaticos",
+          descripcion: "No tengo errores, solo funciones no documentadas.",
+          imagen: "../media/integrantes/josediaz.webp",
+        },
+        {
+          nombre: "Daysliz Sharik Vasquez Castro",
+          ocupacion: "Estudiante de Sistemas Informaticos",
+          descripcion: "Ctrl + Z no existe en la vida real… por eso programo.",
+          imagen: "../media/integrantes/vasquez.webp",
+        },
+      ];
+
+      let actual = 0;
+      const infoArea = document.getElementById("info-area");
+      const cardArea = document.getElementById("card-area");
+
+      function render() {
+        const persona = integrantes[actual];
+
+        infoArea.classList.remove("activo");
+        cardArea.classList.remove("activo");
+
+        setTimeout(() => {
+          infoArea.innerHTML = `
+      <h2>Desarrolladores</h2>
+      <h3>“${persona.descripcion}”</h3>
+      <p>${persona.ocupacion}</p>
+    `;
+
+          cardArea.innerHTML = `
+      <img src="${persona.imagen}" alt="${persona.nombre}">
+      <h4>${persona.nombre}</h4>
+      <span>${persona.ocupacion}</span>
+    `;
+
+          infoArea.classList.add("activo");
+          cardArea.classList.add("activo");
+        }, 200);
+
+        actualizarIndicadores();
+
+        if (actual > 0 && actual < integrantes.length - 1) {
+          document.body.classList.add("bloqueo-scroll");
+        } else {
+          document.body.classList.remove("bloqueo-scroll");
+        }
+      }
+
+      function avanzar(delta) {
+        if (delta > 0 && actual < integrantes.length - 1) {
+          actual++;
+          render();
+        } else if (delta < 0 && actual > 0) {
+          actual--;
+          render();
+        }
+      }
+
+      let bloqueo = false;
+
+      window.addEventListener(
+        "wheel",
+        (e) => {
+          const enExtremoInicio = actual === 0 && e.deltaY < 0;
+          const enExtremoFinal =
+            actual === integrantes.length - 1 && e.deltaY > 0;
+
+          if (!enExtremoInicio && !enExtremoFinal) {
+            e.preventDefault();
+          }
+
+          if (bloqueo) return;
+          bloqueo = true;
+          avanzar(e.deltaY);
+          setTimeout(() => (bloqueo = false), 700);
+        },
+        { passive: false }
+      );
+
+      window.addEventListener("DOMContentLoaded", render);
+
+      let touchStartY = 0;
+      let touchEndY = 0;
+
+      function manejarGesto() {
+        const diferencia = touchStartY - touchEndY;
+
+        if (Math.abs(diferencia) > 50) {
+          if (diferencia > 0) {
+            avanzar(1);
+          } else {
+            avanzar(-1);
+          }
+        }
+      }
+
+      window.addEventListener("touchstart", (e) => {
+        touchStartY = e.changedTouches[0].screenY;
+      });
+
+      window.addEventListener("touchend", (e) => {
+        touchEndY = e.changedTouches[0].screenY;
+        manejarGesto();
+      });
+      const btnPrev = document.getElementById("btn-prev");
+      const btnNext = document.getElementById("btn-next");
+      const indicadores = document.getElementById("indicadores");
+
+      function actualizarIndicadores() {
+        indicadores.innerHTML = "";
+        integrantes.forEach((_, i) => {
+          const punto = document.createElement("span");
+          punto.classList.toggle("activo", i === actual);
+          indicadores.appendChild(punto);
+        });
+      }
+
+      function avanzarManual(direccion) {
+        avanzar(direccion);
+        actualizarIndicadores();
+      }
+
+      btnPrev.addEventListener("click", () => avanzarManual(-1));
+      btnNext.addEventListener("click", () => avanzarManual(1));
+
+      window.addEventListener("DOMContentLoaded", render);
+    </script>
+  </body>
+</html>
