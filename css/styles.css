@@ -1048,7 +1048,6 @@ button {
   }
 
   .modal__comodidades {
-    display: flex;
     flex-direction: column;
     height: fit-content;
     width: 90%;
