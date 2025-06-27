@@ -3,6 +3,7 @@ const contenedorHabitaciones = document.getElementById(
 );
 const modal = document.getElementById("modal-comodidades");
 const cerrarModal = document.getElementById("cerrar-modal");
+const contenedorReservas = document.getElementById("contenedorReservas");
 const listaComodidades = document.getElementById("lista-comodidades");
 const checkboxes = document.querySelectorAll(".filtro-habitacion");
 const botonFiltro = document.querySelector(".filter__bottom");
@@ -85,7 +86,7 @@ cerrarModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Acá checkboxes y recargar habitaciones
+// checkboxes y recargar habitaciones
 
 checkboxes.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {

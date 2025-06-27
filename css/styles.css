@@ -212,7 +212,7 @@ footer {
   color: black;
   padding: 1.2rem 2.5rem;
   border-radius: 5px;
-  background-color: #e1ff00;
+  background-color: #06ffd5;
   transition: 0.3s background ease;
 }
 
@@ -2917,6 +2917,85 @@ body.bloqueo-scroll {
 
 .integrantes__indicadores .activo {
   background-color: var(--color-resaltador);
+}
+
+/* Formulario de Reservación */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  padding-top: 10vh; 
+}
+
+.container {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 65%;
+  background: #f4e3c3;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+  width: 55%;
+}
+.form-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #06090e;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+.input--reservar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.form-section button {
+  background-color: #d4af37;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sidebar {
+  background: #fff7ec;
+  padding: 20px;
+  border-radius: 12px;
+  width: 35%;
+  text-align: center;
+}
+.sidebar h3 {
+  margin-top: 0;
+}
+.sidebar p {
+  margin: 10px 0;
+}
+.sidebar img {
+  margin-top: 20px;
+  width: 80px;
 }
 
 @media screen and (max-width: 768px) {
