@@ -209,10 +209,14 @@ footer {
 }
 
 .principal__link {
+  font-family: "Nunito", serif;
   color: black;
   padding: 1.2rem 2.5rem;
+  font-weight: bold;
   border-radius: 5px;
-  background-color: #06ffd5;
+  background-color: blue;
+  box-shadow: 0 0 15px rgba(0, 0, 139, 0.8); 
+  color: white;
   transition: 0.3s background ease;
 }
 
@@ -420,10 +424,11 @@ footer {
 
 .propuesta__boton {
   background-color: #d4af37;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
   border: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
-  font-weight: 600;
+  color: var(--color-terciario);
+  font-weight: 500;
   border-radius: 0.3rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -702,6 +707,10 @@ footer {
 
   .footer__content {
     flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
   }
 
   .footer__content {
