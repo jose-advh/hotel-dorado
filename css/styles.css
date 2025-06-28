@@ -1189,128 +1189,121 @@ button {
 
 /*Sección de Sobre el hotel*/
 .main_sobre_hotel {
-  height: 300vh;
-}
-.contenedor_total_sb_ht {
-  height: 300%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 12vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: fit-content;
-  gap: 350px;
 }
-.caja_sb_ht {
-  width: 74%;
-  height: 470px;
-  background-color: #ece1ce;
-  border-radius: 40px;
-  padding: 2.5%;
+.contiene_todo {
+  height: 100%;
+  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: fit-content;
+gap: 12rem;
+margin: 5rem 0 10rem 0;
+}
+.adentro {
+  height: fit-content;
+  width: 40vw;
+  padding: 12px;
+}
+.adentro h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.contiene_vision {
   display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10%;
 }
-.imagen_centrada {
+.contiene_linea {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+}
+.linea_separadora {
+  width: 80%;
+  background: #b6b6b6;
+  height: 1px;
+  display: flex;
+  flex: 1;
+  margin-bottom: 5%;
+}
+.fondo_sb_h {
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.8) 0%, rgba(64, 64, 64, 0.7) 25%, rgba(255, 255, 255, 0.2) 50%, rgba(64, 64, 64, 0.7) 75%, rgba(0, 0, 0, 0.8) 100%), url(../media/imgs/Imagen_de_fondo_sb_h.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1905px;
+  height: 800px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 8px 42px 0px rgba(0,0,0,0.41);
+-webkit-box-shadow: 0px 8px 42px 0px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 8px 42px 0px rgba(0,0,0,0.41);
 }
-.caja_sb_ht h1,
-.caja_sb_ht p {
-  margin-left: -38px;
+.fondo_sb_h h2 {
+  color: white;
+  text-shadow: 4px 2px 3px rgb(90, 90, 90);
+  font-size: 7vw;
 }
-.descripcion_sb_ht {
-  width: 70vh;
-  max-width: 1000px;
-  text-align: justify;
+.imagen_sb_h {
+  width: 25rem;
+  height: 21rem;
 }
-.descripcion_sb_ht p,
-.descripcion_sb_ht h1 {
-  font-size: clamp(13.6px, 4vw + 1rem, 16px);
-  line-height: 1.45;
+.separa_main {
+  display: none;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 1000;
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2,)
 }
-.descripcion_sb_ht h1 {
-  margin-bottom: 16px;
+.main_sobre_hotel h3 {
+  font-size: 4vh;
 }
-.imagen_sb_ht {
-  width: 37%;
-  height: 81%;
-  margin-left: 6%;
-  min-width: 40%;
-}
-.imagen_sb_ht img {
-  border: 4px solid white;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-.imgen_sb_int {
-  box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
-  -webkit-box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
-  -moz-box-shadow: 0px 0px 14px 9px rgb(218, 217, 217) inset;
-}
-.sombra_sb_ht {
-  box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
-  -webkit-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
-  -moz-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
-}
-
-@media (max-width: 1680px) {
-  .contenedor_total_sb_ht {
-    top: 14vw;
-  }
-  .caja_sb_ht {
-    width: 90%;
-    height: fit-content;
-  }
-  .imagen_sb_ht {
-    height: 80%;
-    width: 30%;
-  }
-  .descripcion_sb_ht {
-    max-height: 500px;
-  }
-  .descripcion_sb_ht p,
-  .descripcion_sb_ht h1 {
-    font-size: clamp(8.6px, 2vw + 1rem, 15px);
-    margin-left: 1%;
-  }
+.main_sobre_hotel p {
+  font-size: 2vh;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
-  .contenedor_total_sb_ht {
-    top: 24vw;
+  .main_sobre_hotel h3 {
+    font-size: 3.6vh;
+  } 
+  .main_sobre_hotel p {
+    font-size: 1.8vh;
   }
-  .caja_sb_ht {
-    width: 92%;
-    height: 90%;
-    padding: 17px;
-    display: flex;
+  .adentro {
+    width: 80vw;
+    padding: 0;
+  }
+  .imagen_sb_h {
+    width: 80vw;
+    height: 70vw;
+  }
+  .contiene_vision {
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
   }
-  .imagen_sb_ht {
-    margin-top: 6%;
-    min-width: 80%;
+  ._final {
+    margin-bottom: 100px;
   }
-  .descripcion_sb_ht p,
-  .descripcion_sb_ht h1 {
-    font-size: clamp(4.6px, 2vw + 1rem, 10px);
-  }
-  .descripcion_sb_ht {
+  .main_sobre_hotel {
+    height: fit-content;
     width: 100%;
   }
-}
-
-@media (max-height: 721px) {
-  .caja_sb_ht {
-    gap: 4px;
-    margin-bottom: -150px;
-  }
-}
-@media (min-height: 1000px) {
-  .main_sobre_hotel {
-    height: 2140px;
+  .fondo_sb_h {
+    height: 400px;
   }
 }
 
@@ -1485,7 +1478,7 @@ button {
   text-decoration: underline;
 }
 
-/* Sobre el Hotel */
+/* Empleados del Hotel */
 
 .contiene_historias {
   font-family: "Nunito", sans-serif;
@@ -1590,76 +1583,6 @@ button {
     left: 10%;
     text-align: center;
   }
-}
-
-/*Sección de Sobre el hotel*/
-.main_sobre_hotel {
-  height: 300vh;
-}
-.contenedor_total_sb_ht {
-  height: 300%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 12vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  gap: 350px;
-}
-.caja_sb_ht {
-  width: 74%;
-  height: 470px;
-  background: var(--color-secundario);
-  border-radius: 40px;
-  padding: 2.5%;
-  display: flex;
-}
-.imagen_centrada {
-  justify-content: center;
-  align-items: center;
-}
-.caja_sb_ht h1,
-.caja_sb_ht p {
-  margin-left: -38px;
-}
-.descripcion_sb_ht {
-  width: 70vh;
-  max-width: 1000px;
-  text-align: justify;
-}
-.descripcion_sb_ht p,
-.descripcion_sb_ht h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: clamp(15px, 4vw + 1rem, 16px);
-  line-height: 1.45;
-}
-.descripcion_sb_ht h1 {
-  margin-bottom: 16px;
-}
-.imagen_sb_ht {
-  width: 37%;
-  height: 81%;
-  margin-left: 6%;
-  min-width: 40%;
-}
-.imagen_sb_ht img {
-  border: 4px solid white;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-.imgen_sb_int {
-  box-shadow: 0px 0px 14px 9px rgba(250, 250, 250, 1) inset;
-  -webkit-box-shadow: 0px 0px 14px 9px rgba(250, 250, 250, 1) inset;
-  -moz-box-shadow: 0px 0px 14px 9px rgba(250, 250, 250, 1) inset;
-}
-.sombra_sb_ht {
-  box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
-  -webkit-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
-  -moz-box-shadow: 8px 12px 4px 2px rgba(234, 234, 234, 0.75);
 }
 
 /* Restaurante */
@@ -2730,64 +2653,6 @@ button {
   .celebraciones__col--navidad:hover,
   .celebraciones__col--anonuevo:hover {
     transform: none;
-  }
-}
-
-@media (max-width: 1680px) {
-  .contenedor_total_sb_ht {
-    top: 14vw;
-  }
-  .caja_sb_ht {
-    width: 90%;
-    height: fit-content;
-  }
-  .imagen_sb_ht {
-    height: 80%;
-    width: 30%;
-  }
-  .descripcion_sb_ht {
-    max-height: 500px;
-  }
-  .descripcion_sb_ht p,
-  .descripcion_sb_ht h1 {
-    font-size: clamp(8.6px, 2vw + 1rem, 15px);
-    margin-left: 1%;
-  }
-}
-
-@media (max-width: 640px) {
-  .contenedor_total_sb_ht {
-    top: 24vw;
-  }
-  .caja_sb_ht {
-    width: 92%;
-    height: 90%;
-    padding: 17px;
-    display: flex;
-    flex-direction: column;
-  }
-  .imagen_sb_ht {
-    margin-top: 6%;
-    min-width: 80%;
-  }
-  .descripcion_sb_ht p,
-  .descripcion_sb_ht h1 {
-    font-size: clamp(4.6px, 2vw + 1rem, 10px);
-  }
-  .descripcion_sb_ht {
-    width: 100%;
-  }
-}
-
-@media (max-height: 721px) {
-  .caja_sb_ht {
-    gap: 4px;
-    margin-bottom: -150px;
-  }
-}
-@media (min-height: 1000px) {
-  .main_sobre_hotel {
-    height: 2140px;
   }
 }
 
