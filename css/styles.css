@@ -21,6 +21,8 @@ hr {
 }
 
 :root {
+  --font-principal: "Nunito", sans-serif;
+  --font-secundaria: "Old Standard TT", serif;
   --color-principal: #d7c9b1;
   --color-secundario: #f9f6f1;
   --color-terciario: #06090e;
@@ -29,7 +31,7 @@ hr {
 
 header {
   z-index: 9999;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   width: 100%;
   padding: 0 2rem;
   position: fixed;
@@ -138,7 +140,7 @@ header {
 
 footer {
   background-color: var(--color-terciario);
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -202,14 +204,14 @@ footer {
 .principal__title {
   width: 37%;
   font-size: 5rem;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   font-weight: lighter;
   color: white;
   margin-bottom: 20px;
 }
 
 .principal__link {
-  font-family: "Nunito", serif;
+  font-family: var(--font-principal);
   color: black;
   padding: 1.2rem 2.5rem;
   font-weight: bold;
@@ -237,7 +239,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   margin-bottom: 100px;
 }
 
@@ -331,7 +333,7 @@ footer {
   width: 100%;
   height: fit-content;
   background-color: var(--color-terciario);
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   padding: 2rem;
   background-image: url(../media/backgrounds/cartographer.png);
   background-attachment: fixed;
@@ -381,7 +383,7 @@ footer {
   height: fit-content;
   padding: 2rem;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   background-color: #ffffff;
   margin-bottom: 100px;
 }
@@ -456,7 +458,7 @@ footer {
 
 .services__title {
   font-size: 2.2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   color: var(--color-resaltador);
   margin-bottom: 3rem;
   font-weight: 700;
@@ -479,7 +481,7 @@ footer {
   text-align: left;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .service:hover {
@@ -534,7 +536,7 @@ footer {
   height: fit-content;
   padding: 2rem;
   margin-bottom: 100px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .map__llegar {
@@ -729,7 +731,7 @@ footer {
 
 .rooms {
   padding-top: 60px;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   height: fit-content;
 }
 
@@ -790,7 +792,7 @@ footer {
   background-color: var(--color-terciario);
   justify-content: space-between;
   padding: 1rem 2rem;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   margin-bottom: 100px;
 }
 
@@ -841,7 +843,7 @@ footer {
   height: fit-content;
   padding: 1rem;
   border-radius: 10px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   color: white;
   background-color: var(--color-terciario);
 }
@@ -868,7 +870,7 @@ footer {
   gap: 10px;
   padding: 1rem;
   width: 100%;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   border-top: 1px solid;
   border-color: var(--color-principal);
   border-radius: 10px;
@@ -928,7 +930,7 @@ button {
 }
 
 .modal__comodidades {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   display: none;
   position: fixed;
   top: 30%;
@@ -1084,7 +1086,7 @@ button {
 /* Sección de historias de empleados */
 .empleados--main {
   padding-top: 10px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 .contiene_historias {
   width: 100%;
@@ -1181,7 +1183,7 @@ button {
 @media (max-width: 600px) {
   .empleados--main {
     padding-top: 80px;
-    font-family: "Nunito", sans-serif;
+    font-family: var(--font-principal);
   }
 
   .cuadros_empleados {
@@ -1326,7 +1328,7 @@ button {
 
 .main-sala {
   padding-top: 70px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .sala-section {
@@ -1412,7 +1414,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .login-main {
@@ -1496,7 +1498,7 @@ button {
 /* Sobre el Hotel */
 
 .contiene_historias {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1640,7 +1642,7 @@ button {
 }
 .descripcion_sb_ht p,
 .descripcion_sb_ht h1 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   font-size: clamp(15px, 4vw + 1rem, 16px);
   line-height: 1.45;
 }
@@ -1673,7 +1675,7 @@ button {
 /* Restaurante */
 
 .slider-section {
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   background: white;
   padding-top: 5%;
 }
@@ -1721,7 +1723,7 @@ button {
   font-size: 60px;
   color: rgb(10, 10, 10);
   margin: 0;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
 }
 
 .slider-section__navigation {
@@ -1771,13 +1773,13 @@ button {
 .slider-section__subtitle {
   font-size: 28px;
   margin-bottom: 20px;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-principal);
 }
 
 .slider-section__text {
   max-width: 800px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.6;
 }
 
@@ -1856,14 +1858,14 @@ button {
 .gallery__overlay-title {
   font-size: 2rem;
   margin-bottom: 10px;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
 }
 
 .gallery__overlay-text {
   font-size: 1.2rem;
   margin-bottom: 20px;
   line-height: 1.2;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .gallery__overlay-button {
@@ -1873,7 +1875,7 @@ button {
   padding: 15px 30px;
   border-radius: 30px;
   font-size: 1.5rem;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -1885,7 +1887,7 @@ button {
 /* ultima seccion*/
 .dish__section {
   padding: 4rem 2rem;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   background-color: #fff;
 }
 
@@ -1922,7 +1924,7 @@ button {
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   z-index: 10;
 }
 
@@ -1934,7 +1936,7 @@ button {
 .dish__info-title {
   font-size: 1.8rem;
   color: #000;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   margin-bottom: 0.5rem;
 }
 
@@ -2067,7 +2069,7 @@ button {
   max-width: 75%;
   padding: 2rem;
   border-radius: 5px;
-  font-family: "Old Standard TT", serif;
+  font-family: var(--font-secundaria);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -2142,7 +2144,7 @@ button {
   justify-content: space-between;
   border-bottom: 1px dashed #ccc;
   padding: 0.5rem 0;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .menu-item__title {
@@ -2810,7 +2812,7 @@ button {
   margin-left: 5.5%;
   overflow: hidden;
   position: relative;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
 }
 
 .integrantes__contenedor {
@@ -2953,7 +2955,7 @@ body.bloqueo-scroll {
 }
 
 .container {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-principal);
   position: fixed;
   top: 20%;
   left: 0;
