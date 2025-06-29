@@ -112,7 +112,7 @@ header {
 .nav__lista--none {
   height: fit-content;
   position: fixed;
-  right: 15%;
+  right: 180px;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
