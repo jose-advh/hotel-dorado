@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Hotel</title>
+    <title>Registro - Hotel</title>
     <link
       rel="icon"
       href="../media/imgs/LOGO_HOTEL 4.png"
@@ -98,18 +98,21 @@
 
     <main class="login-main">
       <section class="login-container">
-        <h1 class="login-title">Iniciar Sesión</h1>
+        <h1 class="login-title">Registrarse</h1>
 
         <form class="login-form">
-          <label for="usuario">Usuario</label>
-          <input type="text" name="usuario" id="usuario" required />
+          <label for="usuario">Identificación</label>
+          <input type="number" name="Identificación" id="id" required />
+
+          <label for="usuario">Correo</label>
+          <input type="email" name="usuario" id="usuario" required />
 
           <label for="contrasena">Contraseña</label>
           <input type="password" name="contrasena" id="contrasena" required />
 
-          <button type="submit" class="login-btn">Ingresar</button>
+          <button type="submit" class="login-btn">Registrarme</button>
           <p class="login-link">
-            ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+            ¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a>
           </p>
         </form>
       </section>
@@ -162,61 +165,5 @@
         />
       </article>
     </footer>
-
-    <script>
-      const usuarioPrueba = {
-        usuario: "admin",
-        contrasena: "1234",
-      };
-
-      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-      const yaExiste = usuarios.some(
-        (u) => u.usuario === usuarioPrueba.usuario
-      );
-
-      if (!yaExiste) {
-        usuarios.push(usuarioPrueba);
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        console.log("Usuario de prueba guardado en localStorage: admin / 1234");
-      }
-      function registrarUsuario(usuario, contrasena) {
-        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-        if (usuarios.find((u) => u.usuario === usuario)) {
-          return false;
-        }
-
-        usuarios.push({ usuario, contrasena });
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        return true;
-      }
-
-      function loginUsuario(usuario, contrasena) {
-        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-        return usuarios.find(
-          (u) => u.usuario === usuario && u.contrasena === contrasena
-        );
-      }
-
-      document
-        .querySelector(".login-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const usuario = document.getElementById("usuario").value.trim();
-          const contrasena = document.getElementById("contrasena").value;
-
-          const usuarioValido = loginUsuario(usuario, contrasena);
-
-          if (usuarioValido) {
-            alert(`Bienvenido, ${usuario}!`);
-            window.location.href = "habitaciones.html";
-          } else {
-            alert("Usuario o contraseña incorrecta.");
-          }
-
-          this.reset();
-        });
-    </script>
   </body>
 </html>
