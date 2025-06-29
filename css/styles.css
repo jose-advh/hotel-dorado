@@ -110,7 +110,7 @@ header {
 .nav__lista--none {
   height: fit-content;
   position: fixed;
-  right: 0;
+  right: 15%;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
@@ -220,6 +220,12 @@ footer {
   transition: 0.3s background ease;
 }
 
+.principal__link--header {
+  padding: 0.5rem !important;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
 .principal__link:hover {
   background-color: var(--color-resaltador);
 }
@@ -304,6 +310,7 @@ footer {
 .link__room--container {
   display: flex;
   align-items: center;
+  margin-top: 10px;
   gap: 5px;
 }
 
@@ -2965,7 +2972,7 @@ body.bloqueo-scroll {
   position: absolute;
   right: 1%;
   top: 2%;
-  transition: .4s ease all;
+  transition: 0.4s ease all;
 }
 
 .reserva__cerrar:hover {
