@@ -4,6 +4,7 @@ const contenedorHabitaciones = document.getElementById(
 const modal = document.getElementById("modal-comodidades");
 const cerrarModal = document.getElementById("cerrar-modal");
 const contenedorReservas = document.getElementById("contenedorReservas");
+const cerrarReseva = document.getElementById("cerrarReseva");
 const listaComodidades = document.getElementById("lista-comodidades");
 const checkboxes = document.querySelectorAll(".filtro-habitacion");
 const botonFiltro = document.querySelector(".filter__bottom");
@@ -79,6 +80,14 @@ contenedorHabitaciones.addEventListener("click", (e) => {
     });
 
     modal.style.display = "flex";
+  }
+
+  if (e.target.classList.contains("neon-pulse")) {
+    contenedorReservas.classList.remove("display-none");
+
+    cerrarReseva.addEventListener("click", () => {
+      contenedorReservas.classList.add("display-none");
+    });
   }
 });
 
