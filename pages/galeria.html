@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Habitaciones</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="galeria">
+    <header>
+      <a href="../index.html" class="header__logo-link">
+        <img
+          src="../media/imgs/LOGO_HOTEL 4.png"
+          class="header__logo"
+          alt="Logo del Ensueño Dorado"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__lista">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li>
+            <a href="sobre_nosotros.html" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li><a href="historias.html" class="nav__link">Empleados</a></li>
+          <li>
+            <a href="creditos.html" class="nav__link">Créditos</a>
+          </li>
+          <li><a href="#" class="nav__link" id="lugares">Lugares</a></li>
+          <li>
+            <a href="login.html" class="principal__link principal__link--header"
+              >RESERVAR AHORA</a
+            >
+          </li>
+        </ul>
+
+        <!-- Menú que aparece con hover -->
+        <ul class="nav__lista--none display-none" id="listaLugares">
+          <li><a href="restaurante.html" class="nav__link">Restaurantes</a></li>
+          <hr />
+          <li><a href="eventos.html" class="nav__link">Eventos</a></li>
+          <hr />
+          <li><a href="salas.html" class="nav__link">Salas</a></li>
+          <hr />
+        </ul>
+
+        <nav class="menu--mobile">
+          <img
+            src="../media/icons/menu.svg"
+            class="nav__menu--icon"
+            alt=""
+            id="iconMenuMobile"
+          />
+
+          <ul class="list__down list__down--left display-none">
+            <h2 class="list__title">Esenciales</h2>
+            <li>
+              <a href="../index.html" class="nav__link link__down">Inicio</a>
+            </li>
+            <li>
+              <a href="historias.html" class="nav__link link__down"
+                >Empleados</a
+              >
+            </li>
+            <li>
+              <a href="sobre_nosotros.html" class="nav__link link__down"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li>
+              <a href="creditos.html" class="nav__link link__down">Créditos</a>
+            </li>
+          </ul>
+
+          <ul class="list__down list__down--right display-none">
+            <h2 class="list__title">Lugares</h2>
+            <li><a href="salas.html" class="nav__link link__down">Salas</a></li>
+            <li>
+              <a href="eventos.html" class="nav__link link__down">Eventos</a>
+            </li>
+
+            <li>
+              <a href="restaurante.html" class="nav__link link__down"
+                >Restaurantes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="black-curtain" id="menuOverlay"></div>
+    <main class="gallery--main">
+      <div class="r-gallery_container">
+        <div class="r-gallery_header">
+          <h1>Galería Habitaciones</h1>
+        </div>
+
+        <div class="r-gallery_grid">
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Balcon1.webp')"
+          >
+            <img
+              src="../media/rooms/Balcon1.webp"
+              alt="Habitacion con balcon "
+            />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Balcon2.webp')"
+          >
+            <img
+              src="../media/rooms/Balcon2.webp"
+              alt="Habitacion con balcon"
+            />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Familiar1.webp')"
+          >
+            <img src="../media/rooms/Familiar1.webp" alt="Imagen 3" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Familiar4.webp')"
+          >
+            <img src="../media/rooms/Familiar4.webp" alt="Imagen 4" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/dorado/Familiar1.webp')"
+          >
+            <img src="../media/rooms/dorado/Familiar1.webp" alt="Imagen 5" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Romantico1.webp')"
+          >
+            <img src="../media/rooms/Romantico1.webp" alt="Imagen 6" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/sala1.webp')"
+          >
+            <img src="../media/rooms/Sala1.webp" alt="Imagen 7" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/sala2.webp')"
+          >
+            <img src="../media/rooms/sala2.webp" alt="Imagen 8" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+
+          <div
+            class="r-gallery_card"
+            onclick="openModal('../media/rooms/Romantico4.webp')"
+          >
+            <img src="../media/rooms/Romantico4.webp" alt="Imagen 9" />
+            <div class="r-gallery_overlay">
+              <div class="r-gallery_overlay-text">Ver más</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="r-gallery_modal" id="imageModal" onclick="closeModal()">
+      <span class="r-gallery_close-modal" onclick="closeModal()">&times;</span>
+      <div class="r-gallery_modal-content">
+        <img id="modalImage" src="" alt="Imagen ampliada" />
+      </div>
+    </div>
+
+    <script src="../scripts/galeria.js"></script>
+  </body>
+</html>
