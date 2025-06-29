@@ -121,6 +121,10 @@ header {
   background-color: var(--color-terciario);
 }
 
+.nav__lista--none--rooms {
+  right: 0 !important;
+}
+
 .header__logo-link {
   width: 6%;
 }
